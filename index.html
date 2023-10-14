@@ -39,7 +39,7 @@
                 padding: 3px;
                 width: 130px; 
                 height: 30px;
-                margin: 8px 7px;
+                margin: 8px;
                 background-color: #ffdf99;
                 border: #ffdf99;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;               
@@ -52,31 +52,248 @@
                 color: white;
                 transition: 0.3s;}
 
+            .btn2{
+                border-radius: 15px;
+                padding: 3px;
+                width: 170px; 
+                height: 30px;
+                margin: 0px 8px;
+                background-color: #ffdf99;
+                border: #ffdf99;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;               
+                font-weight: bold;
+                font-size: 17px;
+                cursor: pointer;
+            }
+
+            .btn2:hover{
+                background-color:#ffcf66;
+                color: white;
+                transition: 0.3s;}
+
             .signin-img{
                 height:30px;
                 width:30px;
                 position: relative;
-                margin-left:780px;
-                margin-top: 5px;
+                top: 10px;
+                margin-left:820px; 
                 
             }
+            .search{
+                padding-left: 20px;
+                padding-top: 3px;
+                border-radius: 20px;
+                height: 30px;
+                width: 450px;
+                position: absolute;
+                right: 550px;
+                top:8px;
+                background-color: #fff7e6;
+                font-size: 19px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                cursor: pointer;
 
+            }
+            .search:hover{
+                background-color:#ffcf66;
+                color: white;
+                transition: 0.3s;
+                box-shadow:#fff7e6;
+            }
+            .contact{
+                position: absolute;
+                margin-top: 12px;
+                padding: 2px;
+                right: 300px;
+                cursor: pointer;
+                border-radius: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+            .contact:hover{
+                background-color:#ffcf66;
+                color: white;
+                transition: 0.3s;
+                box-shadow:#fff7e6;
+            }
+                
+            .logo-img{
+                border-radius: 5px;
+                height:180px;
+                position: relative;
+                top: 40px;
+                margin-left: 37px;
+                box-shadow: 0px 0px 0px 5px #ffcf66;
+            }
+            .enrich{
+                font-size: 70px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-left: 650px;
+                margin-top: -190px;
+                color: #ffcf66;
+            }
+
+            .namste{
+                font-size: 50px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-left: 30px;
+                margin-top: -80px;
+                color: #000000;
+            }
+            .namste-2{
+                font-size: 20px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-left: 30px;
+                margin-top: -3px;
+                color: #ffcf66;
+            }
+            .sofa-offer-img{
+                height: 500px;
+                width: 970px;
+                margin-top: 80px;
+                margin-left: 75px;
+                margin-right: 30px;
+            }
+            .curtains-offer-img{
+                height:500px;
+            }
+            .offer1-img{
+                height: 300px;
+                width: 1200px;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            }
+
+            .products-container{
+                
+                background-color: rgb(255, 255, 255);
+                height: 800px;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            .top-products{
+                font-family: Copperplate Gothic Bold;
+                font-size: 50px;
+                font-weight: BOLD;
+                text-align: center;
+            }
+            .product-card{
+                background-color: #fff;
+                width: 300px;
+                height: 280px;
+                padding: 40px 20px;
+                margin-top: 10px;
+                margin-left: 15px;
+                margin-right: 15px;
+                border-radius: 10px;
+                position: relative;
+            }
+            .product-img{
+                border-radius: 100%;
+                height: 230px;
+                width: 230px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                filter: drop-shadow(0 0 10px #ffcc00);
+                cursor: pointer;
+            }
+            .product-name:hover{
+                
+            }
+            
+            
+                .product-name{
+                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-weight: bold;
+                    text-align: center;
+                    cursor: pointer;
+
+                }
+                .product-name:hover{
+                    
+                color: #ffcc00;
+                transition: 0.3s;
+                }
             
         </style>
     </head>
     <body>
-        <div class="offer-container">Get  instant  10%  discount  on  cards  and  upi  payments
+        <div class="offer-container">Get 10% instant  discount  on  cards  and  upi  payments
         <img src="./img/homepage/credit-card.png" class="credit-card-img">
     </div>
     <div>
         
     </div>
     <div class="option-bar">
+        <p class="contact">📞 9966559955</p>
         <button class="btn">Products</button>
         <button class="btn">New at Decorify</button>
         <button class="btn">Offers</button>
         <img src="./img/homepage/password.png" class="signin-img">
-        <button class="btn"></button>
+        <button class="btn2">Hey! Login or Signup</button>
+        <input type="text" placeholder="What are you looking for?" required class="search"/>
     </div>
+
+    <img src="./img/homepage/logo.jpg" class="logo-img">
+    <p class="enrich"><br>Enrich</br>Your Life ...By joining with us!</p>
+
+    <div class="namste"><br>Namste !</br></div><div class="namste-2">This is how we say "Hello" in India</div>
+
+    <div><img src="./img/homepage/sofa offer.png" class="sofa-offer-img">
+          <img src="./img/homepage/curtains-offer.png" class="curtains-offer-img">
+        <img src="./img/homepage/offer1.png" class="offer1-img"></div>
+
+        <div class="top-products"><br>Top Products For You</br></div><div><p align="middle">Impressive Collection For Your Dream Home</p>
+
+        <div class="products-container">
+           
+        <div class="product-card">
+            <img src="./img/homepage/sofa.png" class="product-img"/>
+            <h3 class="product-name">Sofas</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="./img/homepage/bed.png" class="product-img"/>
+                <h3 class="product-name">Beds</h3>
+                </div>
+
+                <div class="product-card">
+                    <img src="./img/homepage/wardrobe.png" class="product-img"/>
+                    <h3 class="product-name">Wardrobes</h3>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="./img/homepage/wallpapers.png" class="product-img"/>
+                        <h3 class="product-name">Wallpapers</h3>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="./img/homepage/clocks.png" class="product-img"/>
+                            <h3 class="product-name">Clocks</h3>
+                            </div>
+
+                            <div class="product-card">
+                                <img src="./img/homepage/lamp.png" class="product-img"/>
+                                <h3 class="product-name">Lamps</h3>
+                                </div>
+
+                                <div class="product-card">
+                                    <img src="./img/homepage/curtains.png" class="product-img"/>
+                                    <h3 class="product-name">Curtains</h3>
+                                    </div>
+
+                                    <div class="product-card">
+                                        <img src="./img/homepage/chair.png" class="product-img"/>
+                                        <h3 class="product-name">Chairs</h3>
+                                        </div>
+                
+        </div>
     </body>
 </html>
