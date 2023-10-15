@@ -380,11 +380,10 @@
                 }
 
                 .buying-guides-container{
-                    height: 408px;
-                    width: 100%;
-                    
-                    background-color: #f2f2f2;
-                    display: flex;
+                height: 408px;
+                width: 100%;
+                background-color: #f2f2f2;
+                display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
                 }
@@ -451,7 +450,115 @@
                     background-color: #ffcc00;
                     border-radius: 100% ;
                 }
-                
+
+                .review-container{
+                    margin-left: 0px;
+                    margin-right:0px ;
+                    height:550px;
+                    width: 100%;
+                    margin-top:115px;
+                    background-color: #f2f2f2;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                }
+
+                .star{
+                 color:#cc6600;
+                text-align: center;
+                margin-top: 30px;
+                margin-left: 10px;            
+                 }
+            
+                 .review-heading{
+                font-family: Copperplate Gothic Bold;
+                font-size: 30px;
+                font-weight: BOLD;
+                display: block;
+                text-align: center;
+                width: 100%;
+                margin-top: 140px;
+                 }
+
+                 .review-heading-2{
+                    text-align: center;
+                 }
+
+                 .review-card{
+                    margin-top: 35px;
+                    height: 478px;
+                    width: 330px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    background-color: #fff7e6;
+                    position: relative;
+                    
+                 }
+
+                 .review-card:hover{
+                    box-shadow: 0px 0px 10px #ffcf66;
+                    background-color: #f2f2f2;
+                 }
+
+                 .review-img{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 13px;
+                    width: 250;
+                 }
+
+                 .review-text{
+                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+                    margin-left: 10px;
+                 }
+
+                 .customer-name{
+                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    margin-left: 10px;
+                 }
+
+                 .verified-buyer-text{
+                    margin-left: 35px;
+                 }
+
+                 .verified-buyer-img1{
+                    height:20px;
+                    width: 20px;
+                    margin-left: 10px;
+                    position: absolute;
+                    bottom:107px ;
+                 }
+
+                 .verified-buyer-img2{
+                    height:20px;
+                    width: 20px;
+                    margin-left: 10px;
+                    position: absolute;
+                    bottom:107px ;
+                 }
+
+                 .verified-buyer-img3{
+                    height:20px;
+                    width: 20px;
+                    margin-left: 10px;
+                    position: absolute;
+                    bottom:86px ;}
+
+                    .verified-buyer-img4{
+                    height:20px;
+                    width: 20px;
+                    margin-left: 10px;
+                    position: absolute;
+                    bottom:100px ;}
+
+
+                 .customer-city{
+                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    margin-left: 10px;
+                    position: relative;
+                    bottom: -15px;
+                 }
         </style>
     </head>
     <body>
@@ -586,12 +693,61 @@
                         <img src="./img/homepage/import.png" class="import-img">
                         <p class="buying-guide-text-2">View all products </p>
                       </div>
+                    </div>
+                    <div class="review-heading">Their Words, Our Pride</div>
+                    <p class="review-heading-2">Happy Words of our Happy Customers</p>
+                    <div class="review-container">
+                    
+                    <div class="review-card">
+                        <img src="./img/homepage/review-image-1.png" class="review-img"/>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <p class="review-text">Impressed with the style. Comfortable and elegant. The chaise lounge is top-notch.</p>
+                        <p class="customer-name">Rohini Zaware</p>
+                        <p class="verified-buyer-text">Verified Buyer</p>
+                        <img src="./img/homepage/encrypted.png" class="verified-buyer-img1"/>
+                        <p class="customer-city">Deolali</p></div>
 
+                        <div class="review-card">
+                            <img src="./img/homepage/review-image-2.png" class="review-img"/>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <p class="review-text">A well-designed bed with useful storage drawers. The honey finish gives it an elegant look.</p>
+                            <p class="customer-name">Abhijit Patil</p>
+                            <p class="verified-buyer-text">Verified Buyer</p>
+                            <img src="./img/homepage/encrypted.png" class="verified-buyer-img2"/>
+                            <p class="customer-city">Pune</p></div>
+                        
+                        <div class="review-card">
+                                <img src="./img/homepage/review-image-3.png" class="review-img"/>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <p class="review-text">The Willie Cane Sideboard is a stylish and The cane work is beautifully done, and the wood quality is impressive.</p>
+                                <p class="customer-name">Pratibha Zaware</p>
+                                <p class="verified-buyer-text">Verified Buyer</p>
+                                <img src="./img/homepage/encrypted.png" class="verified-buyer-img3"/>
+                                <div><p class="customer-city">Nagpur</p></div></div>
 
-
-
-
-
+                                <div class="review-card">
+                                    <img src="./img/homepage/review-image-5.png" class="review-img"/>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <p class="review-text">Stylish and comfy chair. The cream color fits perfectly with my decor. Good purchase.</p>
+                                    <p class="customer-name">Prashant Jadhav</p>
+                                    <p class="verified-buyer-text">Verified Buyer</p>
+                                    <img src="./img/homepage/encrypted.png" class="verified-buyer-img4"/>
+                                    <div><p class="customer-city">Mumbai</p></div></div>
+                                    <script src="https://kit.fontawesome.com/90fb78d75b.js" crossorigin="anonymous"></script>
                     </div>
     </body>
 </html>
