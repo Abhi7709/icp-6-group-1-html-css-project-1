@@ -1,5 +1,413 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beds</title>
+    <style>
+        body{
+            background-color: #ffdab3;
+        }
+    .bed-card{
+        background-color: #fff;
+        width: 250px;
+        padding: 20px 30px;
+        margin: 5px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        box-shadow: 0  0 5px rgb(155, 137, 137);
+        height: 500px;
         
-    </head>
+}
+.bed-card:hover{
+    background-color:white;
+    border-radius: 33px;
+    box-shadow:0  0 25px gray;
+    cursor: pointer;
+}
+    .bed-img{
+        height: 300px;
+        width: 270px;
+        display: block;
+        margin-left: -10px;
+    }
+
+    .bed-title{
+        text-align:center;
+         font-size:20px;
+         margin-top: 5px;
+         margin-bottom: 5px;
+            }
+            .bed-price{
+                text-align:left;
+                font-weight: bold;
+                font-size: 22px;
+                margin:0%;
+                margin-bottom: 5px;
+            }
+            .price{
+                margin-top:30px;
+            }
+            .order-now-btn{
+                background-color:#cc6600;
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 5px 20px;
+                border: none;
+                border-radius: 30px;
+                margin-top: 10px;
+                cursor: pointer;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .bed-container{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-evenly;
+                            margin-top: 40px;
+                           
+                        }
+                        .order-now-btn:hover{
+                            background-color:#ffcf66;
+                            box-shadow: 0 0 5px 2px #fff;
+                            padding: 7px 25px;
+                            transition: 0.5s;
+                              }
+                              .star{
+                                color:#cc6600;
+                                text-align: center;
+                                margin-top: 10px;            
+                              }
+                              .name{
+                                font-size: 50px;
+                                text-align: left;
+                                color:#cc6600;
+                                margin-top: 50px;
+                                margin-left: 60px;
+                              }
+                    .bed-review{
+                        color: #cc6600;
+                    }
+                    .bed-brand{
+                        margin-bottom: 5px;
+                        margin-top:0%;
+                    }
+
+                    .livingroom{
+                        margin-left: 60px;
+                        text-align: left;
+                        font-size: 50px;
+                                color:#cc6600;
+                                margin-top: 50px;
+                    }
+
+                    .container2{
+                        margin-top: 40px;
+                    }
+
+                   
+    @media only screen and (max-width:600px)and(max-width:800px){
+        .cake-card{
+        width: 200px;
+    }
+.cake-card-img{
+    height: 120px;
+}
+   }
+        </style>
+</head>
+<body>
+    <h1 class="name">Curtains</h1>
+    <div class="bed-container">
+    <div class="bed-card">
+        <img src="../img/curtains/living room/curtain 2.jpg" class="bed-img"/>
+        <h3 class="bed-title">Living room curtain with floral print 2 sets of 8 fit</h3> 
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 10,000</p>
+        <s class="price">₹15,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(62)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="bed-card">
+        <img src="../img/curtains/window/window 11.jpg" class="bed-img"/>
+        <h3 class="bed-title">Living room curtain set of 2 navyblue color velvet </h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 5,000</p>
+        <s class="price">₹7,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(53) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    
+    <div class="bed-card">
+        <img src="../img/curtains/living room/curtain 18.jpg" class="bed-img"/>
+        <h3 class="bed-title">Stylish living room curtain with whit sheer</h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 14,899</p>
+        <s class="price">₹15,099</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (78)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    
+    <div class="bed-card">
+        <img src="../img/curtains/window/window 7.jpg" class="bed-img"/>
+        <h3 class="bed-title">Sky blue modern window curtain </h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 6,990</p>
+        <s class="price">₹7,099</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(67)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+
+    <div class="bed-card container2">
+        <img src="../img/curtains/living room/curtain 14.jpg" class="bed-img"/>
+        <h3 class="bed-title">Modern luxuries emboridered living room curtain</h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 15,459</p>
+        <s class="price">₹15,099</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(88)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    
+
+    <div class="bed-card container2">
+        <img src="../img/curtains/floral/floral 7.jpg" class="bed-img"/>
+        <h3 class="bed-title">Grey printed transparent window curtain </h3>
+        <p class="bed-brand">Wooden Street</p>
+        <p class="bed-price">₹ 13,690</p>
+        <s class="price">₹15,099</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    
+    <div class="bed-card container2">
+        <img src="../img/curtains/window/window 12.jpg" class="bed-img"/>
+        <h3 class="bed-title">Red printed living room curtain of 2 set</h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 6,159</p>
+        <s class="price">₹8,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (56)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="bed-card container2">
+        <img src="../img/curtains/living room/curtain 17.jpg" class="bed-img"/>
+        <h3 class="bed-title">Luxury embroidered sheer curtain for living room</h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 13,999</p>
+        <s class="price">₹15,099</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(89)
+        <button class="order-now-btn">Buy Now</button>
+    </div></div>
+
+    <div class="livingroom"> Some Living Room Curtains</div>
+    
+    <div class="bed-container">
+    <div class="bed-card">
+        <img src="../img/curtains/window/window 1.jpg" class="bed-img"/>
+        <h3 class="bed-title">Modern grey blackout curtain for living room</h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 8,200</p>
+        <s class="price">₹9,200</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (75)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="bed-card">
+        <img src="../img/curtains/living room/curtain 4.jpg" class="bed-img"/>
+        <h3 class="bed-title">Plain Living room curtain of 8 fit </h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 10,000</p>
+        <s class="price">₹11,099</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(55)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="bed-card">
+        <img src="../img/curtains/living room/curtain 5.jpg" class="bed-img"/>
+        <h3 class="bed-title">Blackout curtain grey omber with white sheer</h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 8,599</p>
+        <s class="price">₹9,300</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(84) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="bed-card">
+        <img src="../img/curtains/living room/curtain 19.jpg" class="bed-img"/>
+        <h3 class="bed-title">Printed living room curtain set of 2</h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 4,000</p>
+        <s class="price">₹5,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="bed-card container2">
+        <img src="../img/curtains/living room/curtain 8.jpg" class="bed-img"/>
+        <h3 class="bed-title">Designer Living room curtain of 8 fit </h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 5,500</p>
+        <s class="price">₹6,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="bed-card container2">
+        <img src="../img/curtains/living room/curtain 9.jpg" class="bed-img"/>
+        <h3 class="bed-title">Cotton living room curtain with two combination </h3>
+        <p class="bed-brand">living Escense</p>
+        <p class="bed-price">₹ 8,500</p>
+        <s class="price">₹9,900</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="bed-card container2">
+        <img src="../img/curtains/living room/curtain 10.jpg" class="bed-img"/>
+        <h3 class="bed-title">Grey living room curtain of 8 fit </h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 5,000</p>
+        <s class="price">₹6,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="bed-card container2">
+        <img src="../img/curtains/living room/curtain 20.jpg" class="bed-img"/>
+        <h3 class="bed-title">Modern blue living room curtain </h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 8,000</p>
+        <s class="price">₹8,500</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div></div>
+
+    <div class="livingroom"> Windows Curtain</div>
+
+    <div class="bed-container">
+    <div class="bed-card container2">
+        <img src="../img/curtains/living room/curtain 10.jpg" class="bed-img"/>
+        <h3 class="bed-title">Grey living room curtain of 8 fit </h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 5,000</p>
+        <s class="price">₹6,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="bed-card container2">
+        <img src="../img/curtains/living room/curtain 10.jpg" class="bed-img"/>
+        <h3 class="bed-title">Grey living room curtain of 8 fit </h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 5,000</p>
+        <s class="price">₹6,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="bed-card container2">
+        <img src="../img/curtains/living room/curtain 10.jpg" class="bed-img"/>
+        <h3 class="bed-title">Grey living room curtain of 8 fit </h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 5,000</p>
+        <s class="price">₹6,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="bed-card container2">
+        <img src="../img/curtains/living room/curtain 10.jpg" class="bed-img"/>
+        <h3 class="bed-title">Grey living room curtain of 8 fit </h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 5,000</p>
+        <s class="price">₹6,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+</div>
+    
+
+<script src="https://kit.fontawesome.com/90fb78d75b.js" crossorigin="anonymous"></script> 
+</body>
 </html>
