@@ -4,8 +4,703 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chairs</title>
+    <style>
+        body{
+            background-color: #ffdab3;
+            padding: 0%;
+            margin: 0;
+        }
+
+        .offer-container{
+                height: 19px;
+                width: 100%;
+                background-color: black;
+                text-align: center;
+                font-size: 11px;
+                color: white;
+                margin-top: 0%;
+                padding-top: 5px;
+                position: relative;
+            }
+
+            .credit-card-img{
+                height: 14px;
+                width: 14px;
+                color: aliceblue;
+                position:absolute;
+                left: 625px;
+                top: 4px;
+            }
+
+            .option-bar{
+                width: 100%;
+                height: 46px;
+                background-color: #ffdf99;
+                position: relative;
+            }
+
+            .btn{
+                border-radius: 15px;
+                padding: 3px;
+                width: 130px; 
+                height: 30px;
+                margin: 8px;
+                background-color: #ffdf99;
+                border: #ffdf99;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;               
+                font-weight: bold;
+                font-size: 17px;
+                cursor: pointer;
+            }
+            .btn:hover{
+                background-color:#ffcf66;
+                color: white;
+                transition: 0.3s;}
+
+            .btn2{
+                border-radius: 15px;
+                padding: 3px;
+                width: 170px; 
+                height: 30px;
+                margin: 0px 8px;
+                background-color: #ffdf99;
+                border: #ffdf99;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;               
+                font-weight: bold;
+                font-size: 17px;
+                cursor: pointer;
+            }
+
+            .btn2:hover{
+                background-color:#ffcf66;
+                color: white;
+                transition: 0.3s;}
+
+            .signin-img{
+                height:30px;
+                width:30px;
+                position: relative;
+                top: 10px;
+                margin-left:820px; 
+                
+            }
+            .search{
+                padding-left: 20px;
+                padding-top: 3px;
+                border-radius: 20px;
+                height: 30px;
+                width: 450px;
+                position: absolute;
+                right: 550px;
+                top:8px;
+                background-color: #fff7e6;
+                font-size: 19px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                cursor: pointer;
+
+            }
+            .search:hover{
+                background-color:#ffcf66;
+                color: white;
+                transition: 0.3s;
+                box-shadow:#fff7e6;
+            }
+            .contact{
+                position: absolute;
+                margin-top: 12px;
+                padding: 2px;
+                right: 300px;
+                cursor: pointer;
+                border-radius: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+            .contact:hover{
+                background-color:#ffcf66;
+                color: white;
+                transition: 0.3s;
+                box-shadow:#fff7e6;
+            }
+
+    .chair-card{
+        background-color: #fff;
+        width: 250px;
+        padding: 20px 30px;
+        margin: 5px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        box-shadow: 0  0 5px rgb(155, 137, 137);
+        height: 500px;
+        
+}
+.chair-card:hover{
+    background-color:white;
+    border-radius: 33px;
+    box-shadow:0  0 25px gray;
+    cursor: pointer;
+}
+    .chair-img{
+        height: 300px;
+        width: 270px;
+        display: block;
+        margin-left: -10px;
+    }
+
+    .chair-title{
+        text-align:center;
+         font-size:20px;
+         margin-top: 5px;
+         margin-bottom: 5px;
+            }
+            .chair-price{
+                text-align:left;
+                font-weight: bold;
+                font-size: 22px;
+                margin:0%;
+                margin-bottom: 5px;
+            }
+            .price{
+                margin-top:30px;
+            }
+            .order-now-btn{
+                background-color:#cc6600;
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 5px 20px;
+                border: none;
+                border-radius: 30px;
+                margin-top: 10px;
+                cursor: pointer;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .chair-container{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-evenly;
+                            margin-top: 30px;
+                           
+                        }
+                        .order-now-btn:hover{
+                            background-color:#ffcf66;
+                            box-shadow: 0 0 5px 2px #fff;
+                            padding: 7px 25px;
+                            transition: 0.5s;
+                              }
+                              .go-back{
+                                margin-left: 20px;
+                              }
+                              .star{
+                                color:#cc6600;
+                                text-align: center;
+                                margin-top: 10px;            
+                              }
+                              .name{
+                                font-size: 50px;
+                                text-align: left;
+                                color:#cc6600;
+                                margin-top: 50px;
+                                margin-left: 60px;
+                              }
+                    .chair-review{
+                        color: #cc6600;
+                    }
+                    .chair-brand{
+                        margin-bottom: 5px;
+                        margin-top:0%;
+                    }
+
+                    .livingroom{
+                        margin-left: 60px;
+                        text-align: left;
+                        font-size: 50px;
+                                color:#cc6600;
+                                margin-top: 50px;
+                    }
+
+                    .container2{
+                        margin-top: 30px;
+                    }
+
+                    .footer-heading{
+                        margin-left: 93px;
+                        margin-top: 40px;
+                    }
+
+                    .footer{
+                        color:darkslategray;
+                        margin-left: 100px;
+                        margin-right: 100px;
+                    }
+
+                    .card-top-margin{
+                        margin-top: -5px;
+                    }
+
+                    
+                   
+    @media only screen and (max-width:600px)and(max-width:800px){
+        .cake-card{
+        width: 200px;
+    }
+.cake-card-img{
+    height: 120px;
+}
+   }
+        </style>
 </head>
 <body>
+    <div class="offer-container">Get 10% instant  discount  on  cards  and  upi  payments
+        <img src="./img/homepage/credit-card.png" class="credit-card-img">
+    </div>
+    <div>
+
+    </div>
+    <div class="option-bar">
+        <p class="contact">📞 9966559955</p>
+        <button class="btn">Products</button>
+        <button class="btn">New at Decorify</button>
+        <button class="btn">Offers</button>
+        <img src="./img/homepage/password.png" class="signin-img">
+        <button class="btn2">Hey! Login or Signup</button>
+        <input type="text" placeholder="What are you looking for?" required class="search"/>
+    </div>
+
+    <h1 class="name">Chairs</h1>
+    <div class="chair-container">
+    <div class="chair-card">
+        <img src="../img/chairs/chairs.jpg" class="chair-img"/>
+        <h3 class="chair-title">Pink velvet sofa chair at afordable price</h3> 
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 20,000</p>
+        <s class="price">₹22,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(84)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="chair-card">
+        <img src="../img/chairs/chairs 2.jpg" class="chair-img"/>
+        <h3 class="chair-title">Modern dining chair by livung escense </h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 17,000</p>
+        <s class="price">₹20,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(90) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
     
+    <div class="chair-card">
+        <img src="../img/chairs/chairs 3.webp" class="chair-img"/>
+        <h3 class="chair-title">Trendy wooden chair set for you</h3> 
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 19,899</p>
+        <s class="price">₹21,099</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> ()95
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    
+    <div class="chair-card">
+        <img src="../img/chairs/living room chair/living room 6.jpg" class="chair-img"/>
+        <h3 class="chair-title">Launge chair for living room at affordable price </h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 12,990</p>
+        <s class="price">₹15,099</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(80)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    
+    <div class="chair-card container2">
+        <img src="../img/chairs/office chair/office 1.jpg" class="chair-img"/>
+        <h3 class="chair-title">Office chair by living escense single piece</h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 4,000</p>
+        <s class="price">₹5,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(75)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    
+
+    <div class="chair-card container2">
+        <img src="../img/chairs/outdoor chair/outdoor 6.jpg" class="chair-img"/>
+        <h3 class="chair-title">Fire pit outdoor seating chair </h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 13,600</p>
+        <s class="price">₹15,099</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(83) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    
+    <div class="chair-card container2">
+        <img src="../img/chairs/wooden chair/wooden 6.jpg" class="chair-img"/>
+        <h3 class="chair-title">Outdoor wooden  dining chair set </h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 6,159</p>
+        <s class="price">₹8,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (60)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="chair-card container2">
+        <img src="../img/chairs/recliner chair/recliner 7.jpg" class="chair-img"/>
+        <h3 class="chair-title">Recline folding chair in blue color</h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 6,550</p>
+        <s class="price">₹8,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(89)
+        <button class="order-now-btn">Buy Now</button>
+    </div></div>
+
+    <div class="livingroom"> Wooden chairs </div>
+    
+    <div class="chair-container">
+    <div class="chair-card">
+        <img src="../img/chairs/wooden chair/wooden 2.jpg" class="chair-img"/>
+        <h3 class="chair-title">Living escense rocking chair(Honey finish)</h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 4,550</p>
+        <s class="price">₹6,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (75)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="chair-card">
+        <img src="../img/chairs/wooden chair/wooden 3.jpg" class="chair-img"/>
+        <h3 class="chair-title">Walnut brown solid wooden dining chair </h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 20,000</p>
+        <s class="price">₹22,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(90)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="chair-card">
+        <img src="../img/chairs/wooden chair/wooden 4.jpg" class="chair-img"/>
+        <h3 class="chair-title">Brown modern wooden chair up to 40% off</h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 10,599</p>
+        <s class="price">₹12,599</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(95) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="chair-card">
+        <img src="../img/chairs/wooden chair/wooden 1.jpg" class="chair-img"/>
+        <h3 class="chair-title">Solid wooden dining chair up to 40% off</h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 7,999</p>
+        <s class="price">₹9,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    </div>
+
+    <div class="livingroom">Office Chair</div>
+
+    <div class="chair-container card-top-margin">
+    <div class="chair-card container2">
+        <img src="../img/chairs/office chair/office 2.jpg" class="chair-img"/>
+        <h3 class="chair-title">Mid-back ergonomic office single chair/study</h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 5,599</p>
+        <s class="price">₹6,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="chair-card container2">
+        <img src="../img/chairs/office chair/office 3.jpg" class="chair-img"/>
+        <h3 class="chair-title">Mesh high-back chair up to 30% off</h3>
+        <p class="chair-brand">living Escense</p>
+        <p class="chair-price">₹ 8,500</p>
+        <s class="price">₹9,900</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="chair-card container2">
+        <img src="../img/chairs/office chair/office 4.jpg" class="chair-img"/>
+        <h3 class="chair-title">Brown high-back office revoliving chair</h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 10,000</p>
+        <s class="price">₹13,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(80)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="chair-card container2">
+        <img src="../img/chairs/office chair/office 6.jpg" class="chair-img"/>
+        <h3 class="chair-title">Royoloak milan italian office single chair </h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 8,000</p>
+        <s class="price">₹8,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(85)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+</div>
+
+    <div class="livingroom"> Recliner Chair</div>
+
+    <div class="chair-container card-top-margin">
+    <div class="chair-card container2">
+        <img src="../img/chairs/recliner chair/recliner 1.jpg" class="chair-img"/>
+        <h3 class="chair-title">Delp 1 Seater Nappa Aire Leather Electric Recliner </h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 21,000</p>
+        <s class="price">₹23,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(95)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="chair-card container2">
+        <img src="../img/chairs/recliner chair/recliner 2.jpg" class="chair-img"/>
+        <h3 class="chair-title">Living Escense Rocker Recliner Chair</h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 17,000</p>
+        <s class="price">₹18,550</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(90)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="chair-card container2">
+        <img src="../img/chairs/recliner chair/recliner 4.jpg" class="chair-img"/>
+        <h3 class="chair-title">Designer Recliner Chair up to 50% off</h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 25,000</p>
+        <s class="price">₹26,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(90)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="chair-card container2">
+        <img src="../img/chairs/recliner chair/recliner 6.jpg" class="chair-img"/>
+        <h3 class="chair-title">Recliner-Chair Lazy Boy Electric Chair</h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 27,550</p>
+        <s class="price">₹28,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(84)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+</div>
+
+<div class="livingroom">Accent Chairs</div>
+
+<div class="chair-container card-top-margin">
+    <div class="chair-card container2">
+        <img src="../img/chairs/living room chair/living room 1.jpg" class="chair-img"/>
+        <h3 class="chair-title">Accent chair for living room up to 30% off</h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 4,000</p>
+        <s class="price">₹5,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(78)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="chair-card container2">
+        <img src="../img/chairs/living room chair/living room 3.jpg" class="chair-img"/>
+        <h3 class="chair-title">Living Room Accent Chair Up To 20% Off</h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 16,550</p>
+        <s class="price">₹18,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(80)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="chair-card container2">
+        <img src="../img/chairs/living room chair/living room 4.jpg" class="chair-img"/>
+        <h3 class="chair-title">High Back Accent Living Room Golden Chair</h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 30,000</p>
+        <s class="price">₹32,110</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>(96)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="chair-card container2">
+        <img src="../img/chairs/living room chair/living room 5.jpg" class="chair-img"/>
+        <h3 class="chair-title">Accent Chair At Affordable Price</h3>
+        <p class="chair-brand">Living Escense</p>
+        <p class="chair-price">₹ 21,550</p>
+        <s class="price">₹23,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(90)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    </div>
+    <br/>
+    <hr/>
+
+    <div>
+
+        <h3 class="footer-heading">Exclusive Chairs For Your Interiors At Best Price Online</h3>
+        <p class="footer">Although extraordinarily overlooked, a chair is one of the essential elements of the furniture set in your interiors.No living spaces are complete without the addition of room chairs which offer the simple yet irreplaceable comfort of resting.<br/><br/>
+            
+            Today, most modern living room chairs add not only a sense of functionality to your home but also bring an eclectic innovation in design and decor with unique styles, colours, and finishes. Handcrafted and handpicked by experts, you will find only the most exclusive collection of chair designs that bring a sense of satisfaction to every homeowner.<br/><br/>
+
+        If you are on the lookout for a comfortable chair for home, here are some of the most relevant factors you must consider before shopping online.
+    </P>
+
+    <h3 class="footer-heading"> PULL UP A CHAIR</h3>
+
+    <p class="footer">When it comes to decorating your living room, a lot of pieces of furniture need to be kept in mind, especially an accent chair – a quirky, sophisticated and flexible design option. Accent chairs can be easily paired with a sofa or can be purchased alone.<br/><br/>
+
+        An accent chair can easily blend within any space. Accent chairs can act as additional seating in your living room or they can be positioned in the corner of the bedroom or the living room, thereby acting as a reading corner or simply a cosy spot. The possibilities of having an accent chair and positioning in the house are quite frankly endless.<br/><br/>
+        
+        Before you start looking for accent chairs online, make sure you consider the following listed factors:
+        <br/><br/>
+        
+        - What purpose do you want your accent chair to serve?<br/><br/>
+        
+        - What kind of fabric and type of accent chair are you looking for?<br/><br/>
+        
+        - Do you intend to mix the accent chair with the rest of your interior or keep it up in harmony with the space?
+     </p>
+
+    <h3 class="footer-heading">RECLINE AND UNWIND</h3>
+    <p class="footer">A living room is incomplete without a sofa set and a few relaxing chairs. However today, recliners – the new-age seating wonder – are replacing these traditional seating accessories by offering extreme comfort. Personifying an uber level of relaxation, the versatile functionality of recliners goes beyond just classifying it as a placate piece of furniture.<br/><br/>
+
+        Ideally installed in living rooms, a recliner chair or recliner sofa is known for its reclining mechanism which enhances your comfort. Light in weight as compared to sofas, recliners can be easily moved within the house. A recliner chair not only offers comfort at the click of a button but also enhances your living room to a unique lounge-like experience. Offering the luxuries of power adjustable headrests, padded armrests, tech-savvy designs and high-quality fabric, HomeTown offers stunning recliner prices at a great value with huge discounts.<br/><br/>
+        
+        Besides, recliners are also known to offer health benefits. Common among people suffering from backaches and other orthopaedic issues, a recliner chair boasts of health benefits as it can be manoeuvred until you find your comfortable seating position. On account of its adjustable backrest, it eases spinal pressure and causes instant relief. Its full extended armrest and headrests improve blood circulation. Its lounging function backed with support enhances easier blood flow and opens respiratory passageways. It is not enough to say how relaxing a recliner chair is. It simply melts away your stress and rejuvenates your body.
+        </p>
+
+        <h3 class="footer-heading">Purchasing Chair Online: Most Important Things To Consider</h3>
+        <p class="footer">Although it is quite simple to look for a chair online, buying the right one will take some thinking so that you purchase what is best for your interiors. Here are some of the most relevant factors which you must consider before purchasing your next chair.<br/><br/>
+
+            Size<br/><br/>
+            
+            Before anything else, you need to understand the most suitable size of home chairs that you will be placing. The right size of the chair will depend on the space available in your interiors and the purpose, based on which you can choose between dining chairs, folding chairs, and plastic chairs.<br/><br/>
+            
+            Comfort<br/><br/>
+            
+            Once you decide on the right size of chairs for home, it is time to seek something that offers the right degree of comfort. So, for example, if you are looking for bedroom chairs with armrest support, you should check for features like padding and recline for the best body posture.<br/><br/>
+            
+            Height<br/><br/>
+            
+            The seating height is an important factor that you should consider before making the final selection for a chair. While you will find that most chairs carry an average height, there can be variations between low and high options, and some chairs may also offer you the option of a height adjustable chair. Depending on the purpose for which you are picking the chairs, you will need to decide how best to choose the right height of the chair.<br/><br/>
+            
+            Resistant Frame<br/><br/>
+            
+            The resistant frame of a chair is the basic framework on which all the materials are mounted and woven. The frame of a chair can determine how resilient it really is and impact its overall durability. When shopping online, you may find the appropriate specification about the resistant frame, which can give you an idea about the quality of the chair.<br/><br/>
+            
+            Budget<br/><br/>
+            
+            You do not need to burn a hole in your pocket to find the right chair for yourself. When shopping online for chairs, you can easily filter your choice between different chairs to find something that best fits your budget. You will find many affordable and reasonable options when shopping for chairs online.<br/><br/>
+            
+            Designs<br/><br/>
+            
+            While finding something adaptable for your home, there is no harm in experimenting with something that could enliven your private space. You can look for a stylish chair that exudes functional design with its unique texture, aesthetic structure, and harmonic patterns.<br/><br/>
+            
+            Craftsmanship<br/><br/>
+            
+            Perfect craftsmanship determines how well a chair is finished and polished. When shopping online here, you will find only the best-crafted chairs, which is why it is a pleasant experience to browse for them.<br/><br/>
+            
+            Quality<br/><r/>
+            
+            There may be no point in buying a fancy chair that does not meet the required quality standards of durability. even though you may find a chair attractive, it may not necessarily be the best thing to pick if it is not crafted with quality materials. Look for the type of wood used overall finishing on armchairs and understand the product description and intended use.
+            </p>
+        <br/>
+        
+ </div>
+
+        <a href="curtains.html">
+            <button class="order-now-btn go-back">Go Back
+    </button>
+    </a>
+    
+
+<script src="https://kit.fontawesome.com/90fb78d75b.js" crossorigin="anonymous"></script> 
 </body>
 </html>
