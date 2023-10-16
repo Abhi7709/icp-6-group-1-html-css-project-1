@@ -1,5 +1,317 @@
-<html>
-    <head>
-        
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <style>
+        body{
+            background-color: #ffdab3;
+        }
+    .clock-card{
+        background-color: #fff;
+        width: 200px;
+        height: 380px;
+        padding: 20px 40px;
+        margin: 5px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+        box-shadow: 0  0 5px rgb(155, 137, 137);
+}
+.clock-card:hover{
+    background-color:white;
+    border-radius: 50px;
+    box-shadow:0  0 30px gray;
+    cursor: pointer;
+}
+    .clock-img{
+        height: 200px;
+        width: 200px;
+        display: block;
+        margin:0%;
+    }
+    .clock-title{
+        text-align:center;
+         font-size:20px;
+         margin-top: 5px;
+         margin-bottom: 5px;
+            }
+            .clock-price{
+                text-align:left;
+                font-weight: bold;
+                font-size: 22px;
+                margin:0%;
+                margin-bottom: 5px;
+            }
+            .price{
+                margin-top:30px;
+            }
+            .order-now-btn{
+                background-color:#cc6600;
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 5px 20px;
+                border: none;
+                border-radius: 30px;
+                margin-top: 10px;
+                cursor: pointer;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .clock-container{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                        }
+                        .order-now-btn:hover{
+                            background-color:#ffcf66;
+                            box-shadow: 0 0 5px 2px #fff;
+                            padding: 7px 25px;
+                            transition: 0.5s;
+                              }
+                              .star{
+                                color:#cc6600;
+                                text-align: center;
+                                margin-top: 10px;            
+                              }
+                              .name{
+                                font-size: 50px;
+                                text-align: center;
+                                color:#cc6600;
+                              }
+                    .clock-review{
+                        color: #cc6600;
+                    }
+                    .clock-brand{
+                        margin-bottom: 5px;
+                        margin-top:0%;
+                    }
+    @media only screen and (max-width:600px)and(max-width:800px){
+        .cake-card{
+        width: 200px;
+    }
+.cake-card-img{
+    height: 120px;
+}
+   }
+        </style>
+</head>
+<body>
+    <h1 class="name">Clocks</h1>
+    <div class="clock-container">
+    <div class="clock-card">
+        <img src="../img/clocks/clock14.png"class="clock-img"/>
+        <h3 class="clock-title"> Bedroom Home Decor clock </h3> 
+        <p class="clock-brand"> Blingbin</p>
+        <p class="clock-price">₹3,799</p>
+        <s class="price">₹12,899</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(61)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="clock-card">
+        <img src="../img/clocks/clock2.png"class="clock-img"/>
+        <h3 class="clock-title">Titan Gold Wall Clock</h3>
+        <p class="clock-brand">Titan </p>
+        <p class="clock-price">₹699</p>
+        <s class="price">₹1,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(75) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="clock-card">
+        <img src="../img/clocks/clock15.png"class="clock-img"/>
+        <h3 class="clock-title">Home and Office Clock</h3>
+        <p class="clock-brand">Fashion Clinic</p>
+        <p class="clock-price">₹649</p>
+        <s class="price">₹999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (95)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="clock-card">
+        <img src="../img/clocks/clock14.png"class="clock-img"/>
+        <h3 class="clock-title">Fancy Clock</h3>
+        <p class="clock-brand">Ajanta</p>
+        <p class="clock-price">₹379</p>
+        <s class="price">₹799</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(55)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="clock-card">
+        <img src="../img/clocks/clock13.png"class="clock-img"/>
+        <h3 class="clock-title">Mute and Quiet Wall Clocks</h3>
+        <p class="clock-brand">Star Work</p>
+        <p class="clock-price">₹549</p>
+        <s class="price">₹999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(45) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="clock-card">
+        <img src="../img/clocks/clock3.png"class="clock-img"/>
+        <h3 class="clock-title">Clock for Home Decor</h3>
+        <p class="clock-brand">Generic</p>
+        <p class="clock-price">₹2,689</p>
+        <s class="price">₹7999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (78)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="clock-card">
+        <img src="../img/clocks/clock16.png"class="clock-img"/>
+        <h3 class="clock-title"> Bedroom Home Decor clock </h3> 
+        <p class="clock-brand"> Blingbin</p>
+        <p class="clock-price">₹3,799</p>
+        <s class="price">₹12,899</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(61)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="clock-card">
+        <img src="../img/clocks/clock4.png"class="clock-img"/>
+        <h3 class="clock-title">Rylan Unique Wall Clock  </h3>
+        <p class="clock-brand">Rylan</p>
+        <p class="clock-price">₹499</p>
+        <s class="price">₹1,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(67)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="clock-card">
+        <img src="../img/clocks/clock5.png"class="clock-img"/>
+        <h3 class="clock-title"> Design Antique Wall Clock </h3>
+        <p class="clock-brand">AUROMIN</p>
+        <p class="clock-price">₹1,259</p>
+        <s class="price">₹3,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(88)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="clock-card">
+        <img src="../img/clocks/clock6.png"class="clock-img"/>
+        <h3 class="clock-title"> Circle Wall Clock</h3>
+        <p class="clock-brand">Ajanta</p>
+        <p class="clock-price">₹371</p>
+        <s class="price">₹1,299</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="clock-card">
+        <img src="../img/clocks/clock7.png"class="clock-img"/>
+        <h3 class="clock-title">Living Room Decoration </h3>
+        <p class="clock-brand"> Delight World</p>
+        <p class="clock-price">₹2,449</p>
+        <s class="price">₹3,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (56)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="clock-card">
+        <img src="../img/clocks/clock8.png"class="clock-img"/>
+        <h3 class="clock-title"> Designer Fancy Clock</h3>
+    
+        <p class="clock-brand">Amazon
+        </p>
+        <p class="clock-price">₹284</p>
+        <s class="price">₹1,899</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(89)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="clock-card">
+        <img src="../img/clocks/clock9.png"class="clock-img"/>
+        <h3 class="clock-title">Home and Office Clock</h3>
+        <p class="clock-brand">Fashion Clinic</p>
+        <p class="clock-price">₹649</p>
+        <s class="price">₹999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (95)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="clock-card">
+        <img src="../img/clocks/clock10.png"class="clock-img"/>
+        <h3 class="clock-title">Fancy Clock</h3>
+        <p class="clock-brand">Ajanta</p>
+        <p class="clock-price">₹379</p>
+        <s class="price">₹799</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(55)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="clock-card">
+        <img src="../img/clocks/clock11.png"class="clock-img"/>
+        <h3 class="clock-title">Mute and Quiet Wall Clocks</h3>
+        <p class="clock-brand">Star Work</p>
+        <p class="clock-price">₹549</p>
+        <s class="price">₹999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(45) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="clock-card">
+        <img src="../img/clocks/clock12.png"class="clock-img"/>
+        <h3 class="clock-title"> Home Decor Art Collection</h3></h3>
+        <p class="clock-brand">DELIDGE</p>
+        <p class="clock-price">₹649</p>
+        <s class="price">₹800</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+</div> 
+<script src="https://kit.fontawesome.com/90fb78d75b.js" crossorigin="anonymous"></script> 
+</body>
 </html>

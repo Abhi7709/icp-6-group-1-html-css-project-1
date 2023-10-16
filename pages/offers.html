@@ -6,6 +6,8 @@
             padding:0%;
             margin: 0%;
             box-sizing: border-box;
+            margin-left: 200px;
+            margin-right: 200px;
         }
         header{
             width:100%;
@@ -14,7 +16,7 @@
             background-image: url("../img/offers/s.jpg");
             background-repeat: no-repeat;
             background-size: 100% 100%;
-           margin-right: 20px;
+           
          }
 .header1{
     width:100%;
@@ -153,12 +155,98 @@
             background-repeat: no-repeat;
             background-size: 100% 100%;
 }
- .sale-offer{
-    border-radius: 50%;
-    margin-top: 0%;
- }
-
-
+.offer-product{
+    font-size: 50px;
+    font-weight: bold;
+    color: darkorange;
+    text-align: center;
+}
+.bed-card{
+        background-color: #fff;
+        width: 180px;
+        height: 390px;
+        padding: 20px 40px;
+        margin: 5px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+        box-shadow: 0  0 5px rgb(155, 137, 137);
+}
+.bed-card:hover{
+    background-color:white;
+    border-radius: 50px;
+    box-shadow:0  0 30px gray;
+    cursor: pointer;
+}
+    .bed-img{
+        height: 150px;
+        width: 150px;
+        display: block;
+        margin:0%;
+    }
+    .bed-title{
+        text-align:center;
+         font-size:20px;
+         margin-top: 5px;
+         margin-bottom: 5px;
+            }
+            .bed-price{
+                text-align:left;
+                font-weight: bold;
+                font-size: 22px;
+                margin:0%;
+                margin-bottom: 5px;
+            }
+            .price{
+                margin-top:30px;
+            }
+            .order-now-btn{
+                background-color:#cc6600;
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 5px 20px;
+                border: none;
+                border-radius: 30px;
+                margin-top: 10px;
+                cursor: pointer;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .bed-container{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                        }
+                        .order-now-btn:hover{
+                            background-color:#ffcf66;
+                            box-shadow: 0 0 5px 2px #fff;
+                            padding: 7px 25px;
+                            transition: 0.5s;
+                              }
+                              .star{
+                                color:#cc6600;
+                                text-align: center;
+                                margin-top: 10px;            
+                              }
+                              .name{
+                                font-size: 50px;
+                                text-align: center;
+                                color:#cc6600;
+                              }
+                    .bed-review{
+                        color: #cc6600;
+                    }
+                    .bed-brand{
+                        margin-bottom: 5px;
+                        margin-top:0%;
+                    }
+                    .bed-name
+                    {
+                        font-size: 50px;
+                         text-align: center;
+                        color:#cc6600;  
+                    }
 @media screen and (min-width: 600)and(max-width:800){
     .header-container{
     width:600px;
@@ -167,6 +255,7 @@
             background-repeat: no-repeat;
             background-size: 100% 100%;
     }
+
 }
 
 
@@ -174,9 +263,7 @@
     </head>
     <body>
         <div class="header-container">
-        <header>
-            <img src="../img/offers/offer.png" class="sale-offer"/>
-        </header>
+        <header></header>
     <header class="header1"></header>
     <header class="header2"></header>
     <header class="header3"></header>
@@ -192,6 +279,180 @@
     <header class="header13"></header>
     <header class="header14"></header>
     <header class="header15"></header>
+    <h1 class="offer-product">Offer Products</h1>
+    <h1 class="bed-name">Wooden Beds</h1>
+    <div class="bed-container">
+        <div class="bed-card">
+            <img src="../img/beds/bed1.png" class="bed-img"/>
+            <h3 class="bed-title">Solimo Hypnoz Engineered Wood Queen Bed With Storage</h3> 
+            <p class="bed-brand">Wooden Street</p>
+            <p class="bed-price">₹ 8,159</p>
+            <s class="price">₹12,099</s><br>
+            <i class="fa-solid fa-star star"></i>
+               <i class="fa-solid fa-star star"></i>
+               <i class="fa-solid fa-star star"></i>
+               <i class="fa-solid fa-star star"></i>
+               <i class="fa-regular fa-star star"></i>(61)
+            <button class="order-now-btn">Buy Now</button>
+        </div>
+        <div class="bed-card">
+            <img src="../img/beds/bed5.png" class="bed-img"/>
+            <h3 class="bed-title">Solimo Antares Engineered Wood Caramel Mahogany Finish Signal Bed </h3>
+            <p class="bed-brand">Wooden Street</p>
+            <p class="bed-price">₹ 10,399</p>
+            <s class="price">₹12,099</s><br>
+            <i class="fa-solid fa-star star"></i>
+               <i class="fa-solid fa-star star"></i>
+               <i class="fa-solid fa-star star"></i>
+               <i class="fa-solid fa-star star"></i>
+               <i class="fa-regular fa-star star"></i>(75) 
+            <button class="order-now-btn">Buy Now</button>
+        </div>
+        <div class="bed-card">
+            <img src="../img/beds/bed6.png" class="bed-img"/>
+            <h3 class="bed-title">Solimo Aquilla Engineered Wood Wenge Finish Queen Bed</h3>
+            <p class="bed-brand">Wooden Street</p>
+            <p class="bed-price">₹ 11,899</p>
+            <s class="price">₹13,099</s><br>
+            <i class="fa-solid fa-star star"></i>
+               <i class="fa-solid fa-star star"></i>
+               <i class="fa-solid fa-star star"></i>
+               <i class="fa-solid fa-star star"></i>
+               <i class="fa-regular fa-star star"></i> (78)
+            <button class="order-now-btn">Buy Now</button>
+        </div>
+        </div>
+        <h1 class="name">Curtains</h1>
+    <div class="bed-container">
+    <div class="bed-card">
+        <img src="../img/curtains/living room/curtain 2.jpg" class="bed-img"/>
+        <h3 class="bed-title">Living room curtain with floral print 2 sets of 8 fit</h3> 
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">799/p>
+        <s class="price">₹1,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(62)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="bed-card">
+        <img src="../img/curtains/window/window 11.jpg" class="bed-img"/>
+        <h3 class="bed-title">Living room curtain set of 2 navyblue color velvet </h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹900</p>
+        <s class="price">₹1,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(53) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    
+    <div class="bed-card">
+        <img src="../img/curtains/living room/curtain 18.jpg" class="bed-img"/>
+        <h3 class="bed-title">Stylish living room curtain with whit sheer</h3>
+        <p class="bed-brand">Living Escense</p>
+        <p class="bed-price">₹ 1,899</p>
+        <s class="price">₹2,099</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (78)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    </div>
+    <h1 class="name">Clocks</h1>
+    <div class="bed-container">
+    <div class="bed-card">
+        <img src="../img/clocks/clock3.png"class="bed-img"/>
+        <h3 class="bed-title">Clock for Home Decor</h3>
+        <p class="bed-brand">Generic</p>
+        <p class="bed-price">₹1,689</p>
+        <s class="price">₹2,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (78)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="bed-card">
+        <img src="../img/clocks/clock16.png"class="bed-img"/>
+        <h3 class="bed-title"> Bedroom Home Decor clock </h3> 
+        <p class="bed-brand"> Blingbin</p>
+        <p class="bed-price">₹1,799</p>
+        <s class="price">₹2,899</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(61)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="bed-card">
+        <img src="../img/clocks/clock4.png"class="bed-img"/>
+        <h3 class="bed-title">Rylan Unique Wall Clock  </h3>
+        <p class="bed-brand">Rylan</p>
+        <p class="bed-price">₹499</p>
+        <s class="price">₹999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(67)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    </div>
+    <h1 class="name">Lamps</h1>
+    <div class="bed-container">
+    <div class="bed-card">
+        <img src="../img/lamps/lamps2.png"class="bed-img"/>
+        <h3 class="bed-title">REFULGIX LED Tabletop Lamp</h3>
+        <p class="bed-brand"> REFULGIX</p>
+        <p class="bed-price">₹559</p>
+        <s class="price">₹999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(75) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="bed-card">
+        <img src="../img/lamps/lamps3.png"class="bed-img"/>
+        <h3 class="bed-title">Crosscut Furniture Metal Floor Lamps
+        </h3>
+        <p class="bed-brand">Crosscut Furniture</p>
+        <p class="bed-price">₹1689</p>
+        <s class="price">₹2599</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (78)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="bed-card">
+        <img src="../img/lamps/lamp4.png"class="bed-img"/>
+        <h3 class="bed-title"> Night lamp for Lamproom </h3>
+        <p class="bed-brand">Desidiya</p>
+        <p class="bed-price">₹499</p>
+        <s class="price">₹999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(67)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    </div>
 </div>
+<script src="https://kit.fontawesome.com/90fb78d75b.js" crossorigin="anonymous"></script> 
+
     </body>
 </html>
