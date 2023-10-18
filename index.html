@@ -1,6 +1,8 @@
 <html>
     <head>
         <title>homepage</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             body{
                 margin: 0px;
@@ -16,6 +18,7 @@
                 margin-top: 0%;
                 padding-top: 5px;
                 position: relative;
+                
             }
 
             .credit-card-img{
@@ -29,17 +32,18 @@
 
             .option-bar{
                 width: 100%;
-                height: 46px;
+                height: 58px;
                 background-color: #ffdf99;
                 position: relative;
+                box-shadow: 0 0 10px #595959;
             }
 
             .btn{
-                border-radius: 15px;
+                border-radius: 10px;
                 padding: 3px;
                 width: 130px; 
                 height: 30px;
-                margin: 8px;
+                margin: 10px;
                 background-color: #ffdf99;
                 border: #ffdf99;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;               
@@ -49,15 +53,17 @@
             }
             .btn:hover{
                 background-color:#ffcf66;
+                box-shadow: 0 0 10px #595959;
                 color: white;
+                transform: scale(1.1);
                 transition: 0.3s;}
 
             .btn2{
-                border-radius: 15px;
+                border-radius: 10px;
                 padding: 3px;
                 width: 170px; 
                 height: 30px;
-                margin: 0px 8px;
+                margin: 0px 10px;
                 background-color: #ffdf99;
                 border: #ffdf99;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;               
@@ -68,8 +74,11 @@
 
             .btn2:hover{
                 background-color:#ffcf66;
+                box-shadow: 0 0 10px #595959;
                 color: white;
+                transform: scale(1.05);
                 transition: 0.3s;}
+
 
             .signin-img{
                 height:30px;
@@ -83,7 +92,7 @@
                 padding-left: 20px;
                 padding-top: 3px;
                 border-radius: 20px;
-                height: 30px;
+                height: 35px;
                 width: 450px;
                 position: absolute;
                 right: 550px;
@@ -95,27 +104,32 @@
 
             }
             .search:hover{
-                background-color:#ffcf66;
-                color: white;
+                background-color:#e6e6e6;
+                color: black;
                 transition: 0.3s;
-                box-shadow:#fff7e6;
+                box-shadow:0 0 10px #fff7e6;
+                transform: scale(1.05);
             }
             .contact{
                 position: absolute;
                 margin-top: 12px;
-                padding: 2px;
+                padding-left:4px ;
+                padding-right:4px ;
+                padding-top:2px ;
+                padding-bottom:2px ;
                 right: 300px;
                 cursor: pointer;
-                border-radius: 20px;
+                border-radius: 10px;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
             }
             .contact:hover{
                 background-color:#ffcf66;
+                box-shadow: 0 0 10px #595959;
                 color: white;
-                transition: 0.3s;
-                box-shadow:#fff7e6;
-            }
+                transform: scale(1.05);
+                transition: 0.3s;}
+            
                 
             .logo-img{
                 border-radius: 5px;
@@ -141,11 +155,11 @@
                 color: #000000;
             }
             .namste-2{
-                font-size: 20px;
+                font-size: 22px;
                 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 margin-left: 30px;
                 margin-top: -3px;
-                color: #ffcf66;
+                color: #e6b800;
             }
             .sofa-offer-img{
                 height: 500px;
@@ -185,6 +199,7 @@
                 font-size: 50px;
                 font-weight: BOLD;
                 text-align: center;
+                text-shadow: 0 0 4px #e6b800;
             }
             .product-card{
                 background-color: #fff;
@@ -207,9 +222,6 @@
                 filter: drop-shadow(0 0 10px #ffcc00);
                 cursor: pointer;
             }
-<<<<<<< HEAD
-                       
-=======
             .product-img:hover{
                 transform: scale(1.1);
                 transition: 0.4s;
@@ -217,7 +229,6 @@
             }
             
             
->>>>>>> 55d739972b44adcd8cd9e8040e4247c24bd08862
             
                 .product-name{
                     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -242,6 +253,11 @@
                     margin-right: auto;
                     cursor: pointer;
                 }
+
+                .new-launches-img:hover{
+                    box-shadow: 0 0 20px #e6b800;
+                    transition: 0.3s;
+                }
                 
 
                 .services-container{
@@ -251,14 +267,16 @@
                     margin-top: 60px;
                 }
                 .reasons{
-                    font-family: Copperplate Gothic Bold;
+                font-family: Copperplate Gothic Bold;
                 font-size: 50px;
                 font-weight: BOLD;
                 display: block;
                 text-align: center;
+                text-shadow:#ffcc00 0 0 4px;
                 }
                 .buisness{
                 text-align: center;
+                font-size: 20px;
                 }
 
                 .services-container-2{
@@ -280,11 +298,12 @@
                 margin-left: 10px;
                 margin-right: 10px;
                 border-radius: 0px;
-                position: relative
+                position: relative;
+                border-radius: 15px;
                 }
 
                 .services-card:hover{
-                    box-shadow:0  0 30px #8c8c8c;
+                    box-shadow:0  0 30px #595959;
                     transition: 0.3s;
                     background-color: #ffdf99;
                     transform: scale(1.1);
@@ -300,6 +319,8 @@
                 margin-top: 0px;
                 filter: drop-shadow(0 0 10px #dfdeda);
                 cursor: pointer;
+                border-top-right-radius: 15px;
+                border-top-left-radius: 15px ;
                 }
 
                 
@@ -338,7 +359,7 @@
                 font-size: 35px;
                 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 margin-left: 1234px;
-                color: #ffffff;
+                color: #000000;
                 font-weight: bold;
                 margin-top: -400px;
                 background-color: #ffdf99;
@@ -347,7 +368,7 @@
                 border-radius: 5px;
                 }
                 .navratri-quote:hover{
-                    color: #000000;
+                    color: #ffffff;
                     transition: 0.5s;
 
                 }
@@ -359,6 +380,13 @@
                 .bedroom-furniture-offer-img{
                     margin-left: 60px;
                     margin-top: 200px;
+                    cursor: pointer;
+                }
+
+                .bedroom-furniture-offer-img:hover{
+
+                    filter: drop-shadow(0 0 10px #ffcc00);
+                    transition: 0.5s;
                 }
                 .bedroom-furniture-quote{
                 font-size: 34px;
@@ -384,7 +412,12 @@
                 width: 580px;
                 margin-left: 60px;
                 margin-top: -300px;
+                cursor: pointer;
                 }
+
+                .chair-offer-img:hover{
+                filter: drop-shadow(0 0 10px #ffcc00);
+                    transition: 0.5s;}
 
                 .buying-guides{
                     margin-top: 180px;
@@ -393,6 +426,7 @@
                 font-size: 50px;
                 font-weight: BOLD;
                 text-align:left; 
+                text-shadow: #e6b800 0 0 4px;
                 }
 
                 .buying-guides-container{
@@ -475,7 +509,7 @@
                     height:550px;
                     width: 100%;
                     margin-top:115px;
-                    background-color: #f2f2f2;
+                    background-color:#fff7e6  ;
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-around;
@@ -490,16 +524,18 @@
             
                  .review-heading{
                 font-family: Copperplate Gothic Bold;
-                font-size: 30px;
+                font-size: 50px;
                 font-weight: BOLD;
                 display: block;
                 text-align: center;
                 width: 100%;
                 margin-top: 140px;
+                text-shadow: #e6b800 0 0 4px;
                  }
 
                  .review-heading-2{
                     text-align: center;
+                    font-size: 23px;
                  }
 
                  .review-card{
@@ -508,18 +544,19 @@
                     width: 330px;
                     margin-left: 10px;
                     margin-right: 10px;
-                    background-color: #fff7e6;
+                    background-color: #f2f2f2;
                     position: relative;
-                    border: #8c8c8c solid 1px;
+                    border-radius: 10px;
+                    box-shadow: #595959 0 0 1px;
                     
                  }
 
                  .review-card:hover{
-                    box-shadow: 0px 0px 10px #ffcf66;
+                    box-shadow: 0px 0px 10px #595959;
                     background-color: #f2f2f2;
-                    transform: scale(1.02);
+                    transform: scale(1.05);
                     transition: .3s;
-                    border: #ffcf66 solid 1px;
+                   
                  }
 
                  .review-img{
@@ -586,7 +623,7 @@
 
                  .footer-container{
                     border-top: #8c8c8c 1px solid;
-                    margin-top: 300px;
+                    margin-top: 250px;
                   height:520px;
                   width:100%;
                   background-color:  black;  
@@ -688,6 +725,26 @@
                     color: white;
                  }
 
+                 .chatbot-img{
+                    height: 30px;
+                    width: 30px;
+                    background-color: #ffdf99;
+                    border-radius: 100%;
+                    padding: 5px;
+                    border: #ffffff 3px solid;
+                    position: fixed;
+                    bottom: 30px;
+                    right: 25px;
+                    filter: drop-shadow(0 0 5px #ffcc00);
+                 }
+
+                 .chatbot-img:hover{
+                    transform: scale(1.1);
+                    transition: 0.3s;
+                    filter: drop-shadow(0 0 5px #424140);
+
+                 }
+
 
 
         </style>
@@ -718,7 +775,9 @@
           <img src="./img/homepage/curtains-offer.png" class="curtains-offer-img">
         <img src="./img/homepage/offer1.png" class="offer1-img"></div>
 
-        <div class="top-products"><br>Top Products For You</br></div><div><p align="middle">Impressive Collection For Your Dream Home</p>
+        <div class="top-products"><br>Top Products For You</br></div><div>
+            
+            <font size="5"><p align="middle">Impressive Collection For Your Dream Home</p></font>
 
         <div class="products-container">
            
@@ -811,13 +870,13 @@
                     <div class="buying-guides-container">
                       
                       <div class="buying-guides-card">
-                        <img src="./img/homepage/bed-buying-guide.png" class="buying-guide-img">
-                        <p class="buying-guide-text">Beds buying guides</p>
+                        <a href="./pages/bedguide.html"><img src="./img/homepage/bed-buying-guide.png" class="buying-guide-img"></a>
+                        <a href="./pages/bedguide.html"><p class="buying-guide-text">Beds buying guides</p></a>
                       </div>  
 
                       <div class="buying-guides-card">
-                        <img src="./img/homepage/sofa-buying-guide.png" class="buying-guide-img">
-                        <p class="buying-guide-text">Sofa buying guides</p>
+                        <a href="./pages/sofaguide.html"><img src="./img/homepage/sofa-buying-guide.png" class="buying-guide-img"></a>
+                        <a href="./pages/sofaguide.html"><p class="buying-guide-text">Sofa buying guides</p></a>
                       </div>
 
                       <div class="buying-guides-card">
@@ -942,7 +1001,8 @@
                         <div><p class="copyright">Terms of Use | Security | Return & Refund | Payment Policy | Grievance Cell |
                             © 2015-2023 Decorify.com.  All rights reserved.
                             The Decorify Furnitures Private Limited</p></div>
-                       
                     </div>
+
+                    <img src="./img/homepage/chatbot-img.png" class="chatbot-img">
     </body>
 </html>
