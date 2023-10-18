@@ -1,277 +1,20 @@
 <html>
     <head>
        <title>Offer page</title>
-       <style>
-        body{
-            padding:0%;
-            margin: 0%;
-            box-sizing: border-box;
-            margin-left: 200px;
-            margin-right: 200px;
-            background-color: #ffdab3;
-        }
-
-        .offer-container{
-                height: 19px;
-                width: 100%;
-                background-color: black;
-                text-align: center;
-                font-size: 11px;
-                color: white;
-                margin-top: 0%;
-                padding-top: 5px;
-                position: relative;
-                
-            }
-
-            .credit-card-img{
-                height: 14px;
-                width: 14px;
-                color: aliceblue;
-                position:absolute;
-                left: 625px;
-                top: 4px;
-            }
-
-            .option-bar{
-                width: 100%;
-                height: 58px;
-                background-color: #ffdf99;
-                position: relative;
-                box-shadow: 0 0 10px #595959;
-            }
-
-            .btn{
-                border-radius: 10px;
-                padding: 3px;
-                width: 130px; 
-                height: 30px;
-                margin: 10px;
-                background-color: #ffdf99;
-                border: #ffdf99;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;               
-                font-weight: bold;
-                font-size: 17px;
-                cursor: pointer;
-            }
-            .btn:hover{
-                background-color:#ffcf66;
-                box-shadow: 0 0 10px #595959;
-                color: white;
-                transform: scale(1.1);
-                transition: 0.3s;}
-
-            .btn2{
-                border-radius: 10px;
-                padding: 3px;
-                width: 170px; 
-                height: 30px;
-                margin: 0px 10px;
-                background-color: #ffdf99;
-                border: #ffdf99;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;               
-                font-weight: bold;
-                font-size: 17px;
-                cursor: pointer;
-            }
-
-            .btn2:hover{
-                background-color:#ffcf66;
-                box-shadow: 0 0 10px #595959;
-                color: white;
-                transform: scale(1.05);
-                transition: 0.3s;}
-
-
-            .signin-img{
-                height:30px;
-                width:30px;
-                position: relative;
-                top: 10px;
-                margin-left:820px; 
-                
-            }
-            .search{
-                padding-left: 20px;
-                padding-top: 3px;
-                border-radius: 20px;
-                height: 35px;
-                width: 450px;
-                position: absolute;
-                right: 550px;
-                top:8px;
-                background-color: #fff7e6;
-                font-size: 19px;
-                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                cursor: pointer;
-
-            }
-            .search:hover{
-                background-color:#e6e6e6;
-                color: black;
-                transition: 0.3s;
-                box-shadow:0 0 10px #fff7e6;
-                transform: scale(1.05);
-            }
-            .contact{
-                position: absolute;
-                margin-top: 12px;
-                padding-left:4px ;
-                padding-right:4px ;
-                padding-top:2px ;
-                padding-bottom:2px ;
-                right: 300px;
-                cursor: pointer;
-                border-radius: 10px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-            }
-            .contact:hover{
-                background-color:#ffcf66;
-                box-shadow: 0 0 10px #595959;
-                color: white;
-                transform: scale(1.05);
-                transition: 0.3s;}
-
-
-
-.offer-product{
-    font-size: 100px;
-    font-weight: bold;
-    color:black;
-    text-align: center;
-}
-.bed-card{
-        background-color: #fff;
-        width: 180px;
-        height: 390px;
-        padding: 20px 40px;
-        margin: 5px;
-        margin-bottom: 20px;
-        border-radius: 25px;
-        box-shadow: 0  0 5px rgb(155, 137, 137);
-}
-.wall-card{
-    background-color: #fff;
-        width: 180px;
-        height: 350px;
-        padding: 20px 40px;
-        margin: 5px;
-        margin-bottom: 20px;
-        border-radius: 25px;
-        box-shadow: 0  0 5px rgb(155, 137, 137);
-}
-.bed-card:hover{
-    background-color:white;
-    border-radius: 50px;
-    box-shadow:0  0 30px gray;
-    cursor: pointer;
-}
-    .bed-img{
-        height: 150px;
-        width: 150px;
-        display: block;
-        margin:0%;
-    }
-    .bed-title{
-        text-align:center;
-         font-size:20px;
-         margin-top: 5px;
-         margin-bottom: 5px;
-            }
-            .bed-price{
-                text-align:left;
-                font-weight: bold;
-                font-size: 22px;
-                margin:0%;
-                margin-bottom: 5px;
-            }
-            .price{
-                margin-top:30px;
-            }
-            .order-now-btn{
-                background-color:#cc6600;
-                color: #fff;
-                font-size: 18px;
-                font-weight: bold;
-                padding: 5px 20px;
-                border: none;
-                border-radius: 30px;
-                margin-top: 10px;
-                cursor: pointer;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .bed-container{
-                            display: flex;
-                            flex-wrap: wrap;
-                            justify-content: space-around;
-                        }
-                        .order-now-btn:hover{
-                            background-color:#ffcf66;
-                            box-shadow: 0 0 5px 2px #fff;
-                            padding: 7px 25px;
-                            transition: 0.5s;
-                              }
-                              .star{
-                                color:#cc6600;
-                                text-align: center;
-                                margin-top: 10px;            
-                              }
-                              .name{
-                                font-size: 50px;
-                                text-align: center;
-                                color:#cc6600;
-                              }
-                    .bed-review{
-                        color: #cc6600;
-                    }
-                    .bed-brand{
-                        margin-bottom: 5px;
-                        margin-top:0%;
-                    }
-                    .bed-name
-                    {
-                        font-size: 50px;
-                         text-align:left;
-                        color:#cc6600; 
-                        margin-left: 50px; 
-                    }
-                
-@media screen and (min-width: 600)and(max-width:800){
-    .header-container{
-    width:600px;
-            height:300px;
-            margin-top: 0%;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-    }
-
-}
-
-
-       </style> 
+       <link rel="stylesheet" href="./../css/offers.css"/>
     </head>
     <body>
 
-        <div class="offer-container">Get 10% instant  discount  on  cards  and  upi  payments
-            <img src="./../img/homepage/credit-card.png" class="credit-card-img">
-        </div>
-        <div>
-            
-        </div>
         <div class="option-bar">
             <p class="contact">📞 9966559955</p>
             <button class="btn">Home 🏠</button>
             <button class="btn">Products</button>
             <button class="btn">Offers</button>
-            <img src="./../img/homepage/password.png" class="signin-img">
-            <button class="btn2">Hey! Login or Signup</button>
+            <button class="btn2">Hey! Login/Signup</button>
             <input type="text" placeholder="What are you looking for?" required class="search"/>
         </div>
 
-        
+       <img src="../img/offers/s.jpg" class="offer-img"/>
 
     <h1 class="offer-product">Offer Products</h1>
     <h1 class="bed-name">Wooden Beds</h1>
@@ -551,7 +294,98 @@
         <button class="order-now-btn">Buy Now</button>
     </div>
 </div>
-<script src="https://kit.fontawesome.com/90fb78d75b.js" crossorigin="anonymous"></script> 
+<h1 class="bed-name"> Sofas</h1>
+    <div class="bed-container">
+    <div class="bed-card">
+        <img src="../img/Sofa's/1.png" class="bed-img"/>
+        <h3 class="bed-title">Henry Seater Sofa (Velvet, Chestnut Brown)</h3> 
+        <p class="bed-brand">Wooden Street</p>
+        <p class="bed-price"><del class="price">₹69,999</del> ₹ 39,898</p>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(62)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="bed-card">
+        <img src="../img/Sofa's/2.png" class="bed-img"/>
+        <h3 class="bed-title">Osbert 3 Seater Curved Sofa (Velvet, Graphite Grey) </h3>
+        <p class="bed-brand">Honey Cream Stripe</p>
+        <p class="bed-price"><del class="price">₹44,999</del>₹ 11,989</p>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(53) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
 
+    
+    <div class="bed-card">
+        <img src="../img/Sofa's/3.png" class="bed-img"/>
+        <h3 class="bed-title">Aspire 5 Seater Modern Curved Fabric Sofa (Cotton)</h3>
+        <p class="bed-brand">Wooden Street</p>
+        <p class="bed-price"><del class="price">₹69,999</del>₹ 85,989</p>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (78)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    </div>
+
+<script src="https://kit.fontawesome.com/90fb78d75b.js" crossorigin="anonymous"></script> 
+<div class="footer-container">
+    <div class="footer-services-card">
+    <p class="footer-services-heading">OUR COMPANY</p>
+        <br class="footer-services">Ahout us</br>
+        <br class="footer-services">Career</br>
+        <br class="footer-services">Media</br>
+        <br class="footer-services">Customer stories</div>
+
+        <div class="footer-services-card">
+        <p class="footer-services-heading">USEFUL LINKS</p>
+        <br class="footer-services">Custom Furniture</br>
+        <br class="footer-services">Exporters</br>
+        <br class="footer-services">Buy in Bulk</br>
+        <br class="footer-services">Refer & Earn</br>
+        <br class="footer-services">Delivery Location</br>
+        <br class="footer-services">Sitemap</div>
+
+        <div class="footer-services-card">
+        <p class="footer-services-heading">SHOP BY ROOM</p>
+        <br class="footer-services">Living Room</br>
+        <br class="footer-services">Bedroom</br>
+        <br class="footer-services">Dining Room</br>
+        <br class="footer-services">Kids Room</br>
+        <br class="footer-services">Modular Furniture</br>
+        <br class="footer-services">Modular Kitchen</br>
+        <br class="footer-services">Modular Wardrobe</div>
+
+        <div class="footer-services-card">
+        <p class="footer-services-heading">PARTNERS</p>
+        <br class="footer-services">Become a Franchise</br>
+        <br class="footer-services">Shop on Decorify</br>
+        <br class="footer-services">Design Partner</br>
+        <br class="footer-services">Design Services</div>
+
+        <div class="footer-services-card">
+        <p class="footer-services-heading">NEED HELP</p>
+        <br class="footer-services">Help Center</br>
+        <br class="footer-services">Contact Us</br>
+        <br class="footer-services">Ask Experts</br>
+        <br class="footer-services">Track your order</div>
+
+
+             <div><img src="./../img/homepage/footer-logo-img.png" class="footer-logo"></div>
+    
+
+    <div><p class="copyright">Terms of Use | Security | Return & Refund | Payment Policy | Grievance Cell |
+        © 2015-2023 Decorify.com.  All rights reserved.
+        The Decorify Furnitures Private Limited</p></div>
+        
+</div>
     </body>
 </html>
