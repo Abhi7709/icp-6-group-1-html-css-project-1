@@ -2,8 +2,6 @@ body{
     padding:0%;
     margin: 0%;
     box-sizing: border-box;
-    margin-left: 200px;
-    margin-right: 200px;
     background-color: #ffdab3;
 }
 
@@ -139,7 +137,7 @@ text-align: center;
 }
 .bed-card{
 background-color: #fff;
-width: 180px;
+width: 280px;
 height: 390px;
 padding: 20px 40px;
 margin: 5px;
@@ -149,8 +147,8 @@ box-shadow: 0  0 5px rgb(155, 137, 137);
 }
 .wall-card{
 background-color: #fff;
-width: 180px;
-height: 350px;
+width: 250px;
+height: 390px;
 padding: 20px 40px;
 margin: 5px;
 margin-bottom: 20px;
@@ -164,8 +162,8 @@ box-shadow:0  0 30px gray;
 cursor: pointer;
 }
 .bed-img{
-height: 150px;
-width: 150px;
+height: 200px;
+width: 250px;
 display: block;
 margin:0%;
 }
@@ -237,7 +235,7 @@ text-align:center;
 
             .footer-container{
             border-top: #8c8c8c 1px solid;
-            margin-top: 200px;
+            margin-top: 100px;
           height:520px;
           width:100%;
           background-color:  black;  
@@ -281,7 +279,10 @@ text-align:center;
             text-align: center;
             color: white;
          }
-
+.offer-img{
+    width: 100%;
+    height: 800px;
+}
         
 @media screen and (min-width: 600)and(max-width:800){
 .header-container{
