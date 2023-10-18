@@ -1,5 +1,224 @@
+<!DOCTYPE html>
 <html>
     <head>
-        
+<title>Product page</title>
+<style>
+    body{
+        padding: 0;
+        margin:0;
+        background-color: #fff7e6;
+    }
+.header{
+    display:flex;
+    flex-direction:start;
+    justify-content:space-evenly;
+    font-size: 18px;
+    flex-wrap: wrap;
+    margin-top:2px;
+    margin-bottom:2px;
+    margin-left:5px;
+    margin-right:5px;
+    cursor:pointer;
+    box-shadow:1px 1px 5px 10px #ffcf66;
+}
+.header:hover{
+    font-size:20px;
+    transition:0.1s;
+}
+.categories{
+    display:flex;
+    flex-direction:start;
+    justify-content:space-evenly;
+    text-decoration: none;
+}
+.same-card1{
+    margin-top:50px;
+    border: 0 solid  white;
+    display:inline-block;
+    cursor:pointer;
+}
+.product{
+    border-radius: 50px;
+    height:230px;
+    width: 250px;
+    box-shadow:1px 1px 10px 1px gainsboro;
+}
+
+.heading{
+    text-align: center;
+    cursor:pointer;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+.product:hover{
+height:240px;
+transition:0.2s;
+box-shadow: 2px 0  20px gray;
+
+}
+
+.same-card2{
+    margin-top:50px;
+    margin-left:60px;
+    border:0 solid  white;
+    display:block;
+    cursor:pointer;
+}
+.navbar1{
+    background-color:darkorange;
+    width: 100%;
+    height: 15vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-name{
+    width: 10%;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 40px;
+
+}
+.menu{
+    font-weight: bold;
+    font-size: 25px;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+text-decoration: none;
+    margin: 50px;
+
+}
+nav .menu a{
+    font-weight: bold;
+    width: 15%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-left:20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+nav .menu a:hover{
+    box-shadow: 2px 2px 5px #fff;
+}
+.search-bar{
+    width: 30%;
+    display:flex;
+    margin-right:70px;
+    margin-left: 60px;
+}
+.input{
+    width: 250px;
+    height: 30px;
+    background-color: #fff7e6;
+    text-align:left;
+    padding-left: 10px;
+}
+.input:hover{
+    background-color: aliceblue;
+}
+.search-btn{
+    height: 35px;
+    width: 100px;
+    margin-left: 10px;
+}
+.search-btn:hover{
+    background-color:bisque;
+
+}
+.product-btn{
+                        width: 10px;
+                        height:5px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        border:#cc6600;
+                        text-decoration: none;
+                        text-align: center;
+                        padding: 5px;
+                }
+@media screen and  (min-width:600px) and (max-width:800px){
+    .same-card2{
+        display:block;
+        width: 300px;
+        height: 300px;
+        flex-direction: column;
+    }
+    .product{
+        display: block;
+        width: 300px;
+        height: 300px;
+    }
+}
+</style>
     </head>
+</html>
+<body>
+    <nav class="navbar1">
+                    <h1 class="logo-name">DECORIFY</h1>
+                <div class="search-bar">
+                  <input class="input" type="text" placeholder="Search...">
+              <button class="search-btn">Search</button>
+                </div>
+            <div class="menu">
+            <a href="../pages/index.html">Home</a>
+            <a href="../pages/product.html">Product</a>
+            <a href="../pages/offers.html">Offer</a>
+            <a href="../pages/login.html">Login</a>
+            </div>
+    </nav>
+    
+
+
+<div class="categories">
+    <div class="same-card2">
+    <img src="../img/product/bed.png"  class="product"/>
+    <p class="heading"><a href="beds.html">Beds</p></a>
+</div>
+
+<div class="same-card2">
+    <img src="../img/product/sofa.png"  class="product"/>
+    <p class="heading"><a href="sofa.html">Sofas</p></a>
+</div>
+
+
+<div class="same-card2">
+    <img src="../img/product/wardrobes.png"  class="product"/>
+    <p class="heading"><a href="wardrobes.html">Wardrobes</p></a>
+</div>
+
+
+<div class="same-card2">
+    <img src="../img/product/chair.png" class="product"/>
+    <p class="heading"><a href="chairs.html">Chairs</p></a>
+</div>
+</div>
+
+<div class="categories">
+    <div class="same-card2">
+    <img src="../img/product/curtains.jpg"  class="product"/>
+    <p class="heading"><a href="curtains.html">Curtains</p></a>
+</div>
+
+<div class="same-card2">
+    <img src="../img/product/lamp.png"class="product"/>
+    <p class="heading"><a href="lamps.html">Lamps</p></a>
+</div>
+
+
+<div class="same-card2">
+    <img src="../img/product/wallpaper.png"  class="product"/>
+    <p class="heading"><a href="wallpaper.html">Wallpapers</p></a>
+</div>
+
+
+<div class="same-card2">
+    <img src= "../img/product/clock.png"  class="product"/>
+    <p class="heading"><a href="clocks.html">Clocks</p></a>
+</div>
+</div>
+<button><a href="index.html" class="product-btn">Product page</a></button>
+</body>
 </html>
