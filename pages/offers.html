@@ -8,6 +8,7 @@
             box-sizing: border-box;
             margin-left: 200px;
             margin-right: 200px;
+            background-color: #ffdf99;
         }
         header{
             width:100%;
@@ -18,136 +19,6 @@
             background-size: 100% 100%;
            
          }
-.header1{
-    width:100%;
-            height:600px;
-            margin-top: 0%;
-            background-image: url("../img/offers/capat.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-}
-.header2{
-    width:100%;
-            height:600px;
-            margin-top: 0%;
-            background-image: url("../img/offers/capat.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-}
-.header2{
-    width:100%;
-            height:600px;
-            margin-top: 0%;
-            background-image: url("../img/offers/clock.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-}
-.header3{
-    width:100%;
-            height:600px;
-            margin-top: 0%;
-            background-image: url("../img/offers/bed.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-}
-.header4{
-    width:100%;
-            height:600px;
-            margin-top: 0%;
-            background-image: url("../img/offers/cheer.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-}
-.header5{
-    width:100%;
-            height:600px;
-            margin-top: 0%;
-            background-image: url("../img/offers/cupboard.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-}.header6{
-    width:100%;
-            height:600px;
-            margin-top: 0%;
-            background-image: url("../img/offers/dining-table.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-}
-.header7{
-    width:100%;
-            height:600px;
-            margin-top: 0%;
-            background-image: url("../img/offers/kichen.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-}
-.header8{
-    width:100%;
-            height:600px;
-            margin-top: 0%;
-            background-image: url("../img/offers/cheer1.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-}
-.header9{
-    width:100%;
-            height:600px;
-            margin-top: 0%;
-            background-image: url("../img/offers/bed2.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-}
-
-.header10{
-    width:100%;
-            height:600px;
-            margin-top: 0%;
-            background-image: url("../img/offers/dining-table2.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-}
-
-.header11{
-    width:100%;
-            height:600px;
-            margin-top: 0%;
-            background-image: url("../img/offers/bed3.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-}
-.header12{
-    width:100%;
-            height:600px;
-            margin-top: 0%;
-            background-image: url("../img/offers/sofa.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-}
-.header13{
-    width:100%;
-            height:600px;
-            margin-top: 0%;
-            background-image: url("../img/offers/bed3.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-}
-
-.header14{
-    width:100%;
-            height:600px;
-            margin-top: 0%;
-            background-image: url("../img/offers/safas.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-}
-.header15{
-    width:100%;
-            height:600px;
-            margin-top: 0%;
-            background-image: url("../img/offers/sofa1.png");
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-}
 .header-container{
     width:100%;
             height:600px;
@@ -156,9 +27,9 @@
             background-size: 100% 100%;
 }
 .offer-product{
-    font-size: 50px;
+    font-size: 100px;
     font-weight: bold;
-    color: darkorange;
+    color:black;
     text-align: center;
 }
 .bed-card{
@@ -247,6 +118,16 @@
                          text-align: center;
                         color:#cc6600;  
                     }
+                    .product-btn{
+                        width: 10px;
+                        height:5px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        border:#cc6600;
+                        text-decoration: none;
+                        text-align: center;
+                        padding: 5px;
+                }
 @media screen and (min-width: 600)and(max-width:800){
     .header-container{
     width:600px;
@@ -264,21 +145,7 @@
     <body>
         <div class="header-container">
         <header></header>
-    <header class="header1"></header>
-    <header class="header2"></header>
-    <header class="header3"></header>
-    <header class="header4"></header>
-    <header class="header5"></header>
-    <header class="header6"></header>
-    <header class="header7"></header>
-    <header class="header8"></header>
-    <header class="header9"></header>
-    <header class="header10"></header>
-    <header class="header11"></header>
-    <header class="header12"></header>
-    <header class="header13"></header>
-    <header class="header14"></header>
-    <header class="header15"></header>
+
     <h1 class="offer-product">Offer Products</h1>
     <h1 class="bed-name">Wooden Beds</h1>
     <div class="bed-container">
@@ -286,8 +153,7 @@
             <img src="../img/beds/bed1.png" class="bed-img"/>
             <h3 class="bed-title">Solimo Hypnoz Engineered Wood Queen Bed With Storage</h3> 
             <p class="bed-brand">Wooden Street</p>
-            <p class="bed-price">₹ 8,159</p>
-            <s class="price">₹12,099</s><br>
+            <p class="bed-price"><del class="price">₹12,099</del> ₹ 8,159</p>
             <i class="fa-solid fa-star star"></i>
                <i class="fa-solid fa-star star"></i>
                <i class="fa-solid fa-star star"></i>
@@ -299,8 +165,7 @@
             <img src="../img/beds/bed5.png" class="bed-img"/>
             <h3 class="bed-title">Solimo Antares Engineered Wood Caramel Mahogany Finish Signal Bed </h3>
             <p class="bed-brand">Wooden Street</p>
-            <p class="bed-price">₹ 10,399</p>
-            <s class="price">₹12,099</s><br>
+            <p class="bed-price"><del class="price">₹12,099</del> ₹ 10,399</p>
             <i class="fa-solid fa-star star"></i>
                <i class="fa-solid fa-star star"></i>
                <i class="fa-solid fa-star star"></i>
@@ -312,8 +177,7 @@
             <img src="../img/beds/bed6.png" class="bed-img"/>
             <h3 class="bed-title">Solimo Aquilla Engineered Wood Wenge Finish Queen Bed</h3>
             <p class="bed-brand">Wooden Street</p>
-            <p class="bed-price">₹ 11,899</p>
-            <s class="price">₹13,099</s><br>
+            <p class="bed-price"> <del class="price">₹12,099</del> ₹ 11,899</p>
             <i class="fa-solid fa-star star"></i>
                <i class="fa-solid fa-star star"></i>
                <i class="fa-solid fa-star star"></i>
@@ -328,8 +192,7 @@
         <img src="../img/curtains/living room/curtain 2.jpg" class="bed-img"/>
         <h3 class="bed-title">Living room curtain with floral print 2 sets of 8 fit</h3> 
         <p class="bed-brand">Living Escense</p>
-        <p class="bed-price">799/p>
-        <s class="price">₹1,000</s><br>
+        <p class="bed-price"> <del class="price">₹12,099</del>₹10,799/p>
         <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
@@ -341,8 +204,7 @@
         <img src="../img/curtains/window/window 11.jpg" class="bed-img"/>
         <h3 class="bed-title">Living room curtain set of 2 navyblue color velvet </h3>
         <p class="bed-brand">Living Escense</p>
-        <p class="bed-price">₹900</p>
-        <s class="price">₹1,000</s><br>
+        <p class="bed-price"> <del class="price">₹1,199</del> ₹900</p>
         <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
@@ -356,8 +218,7 @@
         <img src="../img/curtains/living room/curtain 18.jpg" class="bed-img"/>
         <h3 class="bed-title">Stylish living room curtain with whit sheer</h3>
         <p class="bed-brand">Living Escense</p>
-        <p class="bed-price">₹ 1,899</p>
-        <s class="price">₹2,099</s><br>
+        <p class="bed-price"><del class="price">₹2,099</del> ₹ 1,899</p>
         <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
@@ -372,8 +233,7 @@
         <img src="../img/clocks/clock3.png"class="bed-img"/>
         <h3 class="bed-title">Clock for Home Decor</h3>
         <p class="bed-brand">Generic</p>
-        <p class="bed-price">₹1,689</p>
-        <s class="price">₹2,999</s><br>
+        <p class="bed-price"> <del class="price">₹2,099</del> ₹1,689</p>
         <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
@@ -385,8 +245,7 @@
         <img src="../img/clocks/clock16.png"class="bed-img"/>
         <h3 class="bed-title"> Bedroom Home Decor clock </h3> 
         <p class="bed-brand"> Blingbin</p>
-        <p class="bed-price">₹1,799</p>
-        <s class="price">₹2,899</s><br>
+        <p class="bed-price"> <del class="price">₹2,099</del>₹1,799</p>
         <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
@@ -398,8 +257,7 @@
         <img src="../img/clocks/clock4.png"class="bed-img"/>
         <h3 class="bed-title">Rylan Unique Wall Clock  </h3>
         <p class="bed-brand">Rylan</p>
-        <p class="bed-price">₹499</p>
-        <s class="price">₹999</s><br>
+        <p class="bed-price"> <del class="price">₹1,099</del>₹499</p>
         <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
@@ -414,8 +272,7 @@
         <img src="../img/lamps/lamps2.png"class="bed-img"/>
         <h3 class="bed-title">REFULGIX LED Tabletop Lamp</h3>
         <p class="bed-brand"> REFULGIX</p>
-        <p class="bed-price">₹559</p>
-        <s class="price">₹999</s><br>
+        <p class="bed-price"> <del class="price">₹1,099</del>₹559</p>
         <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
@@ -428,8 +285,7 @@
         <h3 class="bed-title">Crosscut Furniture Metal Floor Lamps
         </h3>
         <p class="bed-brand">Crosscut Furniture</p>
-        <p class="bed-price">₹1689</p>
-        <s class="price">₹2599</s><br>
+        <p class="bed-price"> <del class="price">₹2,099</del> ₹1,689</p>
         <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
@@ -441,8 +297,7 @@
         <img src="../img/lamps/lamp4.png"class="bed-img"/>
         <h3 class="bed-title"> Night lamp for Lamproom </h3>
         <p class="bed-brand">Desidiya</p>
-        <p class="bed-price">₹499</p>
-        <s class="price">₹999</s><br>
+        <p class="bed-price"> <del class="price">₹1,099</del> ₹499</p>
         <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
            <i class="fa-solid fa-star star"></i>
@@ -452,6 +307,7 @@
     </div>
     </div>
 </div>
+<button><a href="product.html" class="product-btn">Product page</a></button>
 <script src="https://kit.fontawesome.com/90fb78d75b.js" crossorigin="anonymous"></script> 
 
     </body>
