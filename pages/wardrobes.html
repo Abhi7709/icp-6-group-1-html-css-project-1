@@ -1,5 +1,643 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curtains</title>
+    <style>
+        body{
+            background-color: #ffdab3;
+            padding: 0%;
+            margin: 0;
+        }
+
+        .offer-container{
+                height: 19px;
+                width: 100%;
+                background-color: black;
+                text-align: center;
+                font-size: 11px;
+                color: white;
+                margin-top: 0%;
+                padding-top: 5px;
+                position: relative;
+                
+            }
+
+            .credit-card-img{
+                height: 14px;
+                width: 14px;
+                color: aliceblue;
+                position:absolute;
+                left: 625px;
+                top: 4px;
+            }
+
+            .option-bar{
+                width: 100%;
+                height: 58px;
+                background-color: #ffdf99;
+                position: relative;
+                box-shadow: 0 0 10px #595959;
+            }
+
+            .btn{
+                border-radius: 10px;
+                padding: 3px;
+                width: 130px; 
+                height: 30px;
+                margin: 10px;
+                background-color: #ffdf99;
+                border: #ffdf99;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;               
+                font-weight: bold;
+                font-size: 17px;
+                cursor: pointer;
+            }
+            .btn:hover{
+                background-color:#ffcf66;
+                box-shadow: 0 0 10px #595959;
+                color: white;
+                transform: scale(1.1);
+                transition: 0.3s;}
+
+            .btn2{
+                border-radius: 10px;
+                padding: 3px;
+                width: 170px; 
+                height: 30px;
+                margin: 0px 10px;
+                background-color: #ffdf99;
+                border: #ffdf99;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;               
+                font-weight: bold;
+                font-size: 17px;
+                cursor: pointer;
+            }
+
+            .btn2:hover{
+                background-color:#ffcf66;
+                box-shadow: 0 0 10px #595959;
+                color: white;
+                transform: scale(1.05);
+                transition: 0.3s;}
+
+
+            .signin-img{
+                height:30px;
+                width:30px;
+                position: relative;
+                top: 10px;
+                margin-left:820px; 
+                
+            }
+            .search{
+                padding-left: 20px;
+                padding-top: 3px;
+                border-radius: 20px;
+                height: 35px;
+                width: 450px;
+                position: absolute;
+                right: 550px;
+                top:8px;
+                background-color: #fff7e6;
+                font-size: 19px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                cursor: pointer;
+
+            }
+            .search:hover{
+                background-color:#e6e6e6;
+                color: black;
+                transition: 0.3s;
+                box-shadow:0 0 10px #fff7e6;
+                transform: scale(1.05);
+            }
+            .contact{
+                position: absolute;
+                margin-top: 12px;
+                padding-left:4px ;
+                padding-right:4px ;
+                padding-top:2px ;
+                padding-bottom:2px ;
+                right: 300px;
+                cursor: pointer;
+                border-radius: 10px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+            .contact:hover{
+                background-color:#ffcf66;
+                box-shadow: 0 0 10px #595959;
+                color: white;
+                transform: scale(1.05);
+                transition: 0.3s;}
+
+            
+            .contact:hover{
+                background-color:#ffcf66;
+                color: white;
+                transition: 0.3s;
+                box-shadow:#fff7e6;
+            }
+
+    .curtain-card{
+        background-color: #fff;
+        width: 250px;
+        padding: 20px 30px;
+        margin: 5px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        box-shadow: 0  0 5px rgb(155, 137, 137);
+        height: 500px;
         
-    </head>
+}
+.curtain-card:hover{
+    background-color:white;
+    border-radius: 33px;
+    box-shadow:0  0 25px gray;
+    cursor: pointer;
+}
+    .curtain-img{
+        height: 300px;
+        width: 270px;
+        display: block;
+        margin-left: -10px;
+    }
+
+    .curtain-title{
+        text-align:center;
+         font-size:20px;
+         margin-top: 5px;
+         margin-bottom: 5px;
+            }
+            .curtain-price{
+                text-align:left;
+                font-weight: bold;
+                font-size: 22px;
+                margin:0%;
+                margin-bottom: 5px;
+            }
+            .price{
+                margin-top:30px;
+            }
+            .order-now-btn{
+                background-color:#cc6600;
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 5px 20px;
+                border: none;
+                border-radius: 30px;
+                margin-top: 10px;
+                cursor: pointer;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .curtain-container{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-evenly;
+                            margin-top: 30px;
+                           
+                        }
+                        .order-now-btn:hover{
+                            background-color:#ffcf66;
+                            box-shadow: 0 0 5px 2px #fff;
+                            padding: 7px 25px;
+                            transition: 0.5s;
+                              }
+                              .go-back{
+                                margin-left: 20px;
+                              }
+                              .star{
+                                color:#cc6600;
+                                text-align: center;
+                                margin-top: 10px;            
+                              }
+                              .name{
+                                font-size: 50px;
+                                text-align: left;
+                                color:#cc6600;
+                                margin-top: 50px;
+                                margin-left: 60px;
+                              }
+                    .curtain-review{
+                        color: #cc6600;
+                    }
+                    .curtain-brand{
+                        margin-bottom: 5px;
+                        margin-top:0%;
+                    }
+
+                    .livingroom{
+                        margin-left: 60px;
+                        text-align: left;
+                        font-size: 50px;
+                                color:#cc6600;
+                                margin-top: 50px;
+                    }
+
+                    .container2{
+                        margin-top: 30px;
+                    }
+
+                    .footer-heading{
+                        margin-left: 93px;
+                        margin-top: 40px;
+                    }
+
+                    .footer{
+                        color:darkslategray;
+                        margin-left: 100px;
+                        margin-right: 100px;
+                    }
+
+                    .card-top-margin{
+                        margin-top: -5px;
+                    }
+
+                   
+    @media only screen and (max-width:600px)and(max-width:800px){
+        .cake-card{
+        width: 200px;
+    }
+.cake-card-img{
+    height: 120px;
+}
+   }
+        </style>
+</head>
+<body>
+    <div class="offer-container">Get 10% instant  discount  on  cards  and  upi  payments
+        <img src="./../img/homepage/credit-card.png" class="credit-card-img">
+    </div>
+    <div>
+        
+    </div>
+    <div class="option-bar">
+        <p class="contact">📞 9966559955</p>
+        <button class="btn">Home 🏠</button>
+        <button class="btn">Products</button>
+        <button class="btn">Offers</button>
+        <img src="./../img/homepage/password.png" class="signin-img">
+        <button class="btn2">Hey! Login or Signup</button>
+        <input type="text" placeholder="What are you looking for?" required class="search"/>
+    </div>
+
+    <h1 class="name">Wardrobes</h1>
+    <div class="curtain-container">
+    <div class="curtain-card">
+        <img src="../img/wardrobes/wardrobe1.png" class="curtain-img"/>
+        <h3 class="curtain-title">Kriva Modular 4 Door Wardrobe With Shelf</h3> 
+        <p class="curtain-brand">Living Escense</p>
+        <p class="curtain-price">₹ 33,989</p>
+        <s class="price">₹ 50,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(62)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="curtain-card">
+        <img src="../img/wardrobes/wardrobes2.png" class="curtain-img"/>
+        <h3 class="curtain-title">Cambrey 3 Door Multi Utility Wardrobe</h3>
+        <p class="curtain-brand">Wooden street</p>
+        <p class="curtain-price">₹ 56,000</p>
+        <s class="price">₹70,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(53) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    
+    <div class="curtain-card">
+        <img src="../img/wardrobes/wardrobes3.png" class="curtain-img"/>
+        <h3 class="curtain-title">Emboss 2 Door Multi Utility Wardrobe</h3>
+            <p class="curtain-brand">Wooden street</p>
+        <p class="curtain-price">₹ 34,899</p>
+        <s class="price">₹52,099</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (78)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    
+    <div class="curtain-card">
+        <img src="../img/wardrobes/wardrobes4.png" class="curtain-img"/>
+        <h3 class="curtain-title">Adolph 2 Door Multi Utility Wardrobe </h3>
+        <p class="curtain-brand">The carps</p>
+        <p class="curtain-price">₹ 36,990</p>
+        <s class="price">₹47,099</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(67)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+
+    <div class="curtain-card container2">
+        <img src="../img/wardrobes/wardrobes5.png" class="curtain-img"/>
+        <h3 class="curtain-title">Cambrey 2 Door Wardrobe with Mirror</h3>
+        <p class="curtain-brand">Decorify</p>
+        <p class="curtain-price">₹ 25,459</p>
+        <s class="price">₹36,099</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(88)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    
+
+    <div class="curtain-card container2">
+        <img src="../img/wardrobes/wardrobe6.png" class="curtain-img"/>
+        <h3 class="curtain-title">Grey printed transparent window curtain </h3>
+        <p class="curtain-brand">Wooden Street</p>
+        <p class="curtain-price">₹ 53,690</p>
+        <s class="price">₹59,099</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    
+    <div class="curtain-card container2">
+        <img src="../img/wardrobes/wardrobes7.png" class="curtain-img"/>
+        <h3 class="curtain-title">Vespera Engineered Wood Four Door Wardrobe </h3>
+        <p class="curtain-brand">Living Escense</p>
+        <p class="curtain-price">₹ 61,159</p>
+        <s class="price">₹80,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (56)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="curtain-card container2">
+        <img src="../img/wardrobes/wardrobe8.png" class="curtain-img"/>
+        <h3 class="curtain-title">Nixon Solid Wood 2 Door Cupboard (Honey Finish)</h3>
+        <p class="curtain-brand">Woodly</p>
+        <p class="curtain-price">₹ 20,999</p>
+        <s class="price">₹23,099</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(89)
+        <button class="order-now-btn">Buy Now</button>
+    </div></div>
+    <hr/>
+
+    <div class="livingroom"> 4 door Wardrobes</div>
+    
+    <div class="curtain-container">
+    <div class="curtain-card">
+        <img src="./../img/wardrobes/wardrobe9.png" class="curtain-img"/>
+        <h3 class="curtain-title">Vespera Engineered Wood Four Door Wardrobe</h3>
+        <p class="curtain-brand">Living Escense</p>
+        <p class="curtain-price">₹ 58,200</p>
+        <s class="price">₹69,200</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (75)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="curtain-card">
+        <img src="./../img/wardrobes/wardrobe10.png" class="curtain-img"/>
+        <h3 class="curtain-title">Celestin Four Door Wardrobe with Dressing Table </h3>
+        <p class="curtain-brand">Woodland</p>
+        <p class="curtain-price">₹ 29,999</p>
+        <s class="price">₹41,099</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(55)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="curtain-card">
+        <img src="./../img/wardrobes/wardrobe11.png" class="curtain-img"/>
+        <h3 class="curtain-title">Celestin Four Door Wardrobe Dressing Table</h3>
+        <p class="curtain-brand">Carpents</p>
+        <p class="curtain-price">₹ 18,599</p>
+        <s class="price">₹29,300</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(84) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="curtain-card">
+        <img src="./../img/wardrobes/wardrobe12.png" class="curtain-img"/>
+        <h3 class="curtain-title">Atlantis Modular 4 Door Cupboard Drawers </h3>
+        <p class="curtain-brand">Living Escense</p>
+        <p class="curtain-price">₹ 24,000</p>
+        <s class="price">₹35,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="curtain-card container2">
+        <img src="./../img/wardrobes/wardrobe13.png" class="curtain-img"/>
+        <h3 class="curtain-title">Celestin Four Door Wardrobe Dressing Table</h3>
+        <p class="curtain-brand">Wooden roads</p>
+        <p class="curtain-price">₹ 25,500</p>
+        <s class="price">₹46,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="curtain-card container2">
+        <img src="./../img/wardrobes/wardrobe14.png" class="curtain-img"/>
+        <h3 class="curtain-title">Atlantis Modular 4 Door Cupboard  </h3>
+        <p class="curtain-brand">living Escense</p>
+        <p class="curtain-price">₹ 28,500</p>
+        <s class="price">₹39,900</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="curtain-card container2">
+        <img src="./../img/wardrobes/wardrobe15.png" class="curtain-img"/>
+        <h3 class="curtain-title">Valor 4 Door Wardrobe with Mirror </h3>
+        <p class="curtain-brand">Living Escense</p>
+        <p class="curtain-price">₹ 45,000</p>
+        <s class="price">₹56,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="curtain-card container2">
+        <img src="./../img/wardrobes/wardrobe16.png" class="curtain-img"/>
+        <h3 class="curtain-title">Valor 4 Door Wardrobe with Mirror</h3>
+        <p class="curtain-brand">Living Escense</p>
+        <p class="curtain-price">₹ 48,000</p>
+        <s class="price">₹58,500</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div></div>
+    <hr/>
+
+    <div class="livingroom">Double Door Wardrobes</div>
+
+    <div class="curtain-container card-top-margin">
+    <div class="curtain-card container2">
+        <img src="./../img/wardrobes/wardrobe17.png" class="curtain-img"/>
+        <h3 class="curtain-title">Allan Sheesham Wood 2 Door Wardrobe </h3>
+        <p class="curtain-brand">Asians</p>
+        <p class="curtain-price">₹ 35,000</p>
+        <s class="price">₹46,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(95)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="curtain-card container2">
+        <img src="./../img/wardrobes/wardrobe18.png" class="curtain-img"/>
+        <h3 class="curtain-title">Overa Mango Wood Double Door Almirah </h3>
+        <p class="curtain-brand">Jasmine</p>
+        <p class="curtain-price">₹ 37,000</p>
+        <s class="price">₹38,550</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(90)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="curtain-card container2">
+        <img src="./../img/wardrobes/wardrobe19.png" class="curtain-img"/>
+        <h3 class="curtain-title">Cambrey Sheesham Wood Double Door Wardrobe </h3>
+        <p class="curtain-brand">Woodestine</p>
+        <p class="curtain-price">₹ 55,000</p>
+        <s class="price">₹80,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(75)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="curtain-card container2">
+        <img src="./../img/wardrobes/wardrobe20.png" class="curtain-img"/>
+        <h3 class="curtain-title">Nixon Solid Wood 2 Door Cupboard</h3>
+        <p class="curtain-brand">Nilkamal</p>
+        <p class="curtain-price">₹ 26,550</p>
+        <s class="price">₹36,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(84)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+</div>
+
+<div class="livingroom">Single Door Wardrobes</div>
+
+<div class="curtain-container card-top-margin">
+    <div class="curtain-card container2">
+        <img src="./../img/wardrobes/wardrobe21.png" class="curtain-img"/>
+        <h3 class="curtain-title">Adolph 1 Door Multi-Utility Wardrobe </h3>
+        <p class="curtain-brand">Living Escense</p>
+        <p class="curtain-price">₹ 24,000</p>
+        <s class="price">₹35,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(78)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="curtain-card container2">
+        <img src="./../img/wardrobes/wardrobe22.png" class="curtain-img"/>
+        <h3 class="curtain-title">Holden 1 Door Multi-Utility Wardrobe</h3>
+        <p class="curtain-brand">Mustard</p>
+        <p class="curtain-price">₹ 24,550</p>
+        <s class="price">₹26,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(80)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="curtain-card container2">
+        <img src="./../img/wardrobes/wardrobe23.png" class="curtain-img"/>
+        <h3 class="curtain-title">Cambrey 1 Door With 3 Drawers Wardrobe</h3>
+        <p class="curtain-brand">Savhana</p>
+        <p class="curtain-price">₹ 39,000</p>
+        <s class="price">₹45,110</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(72)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="curtain-card container2">
+        <img src="./../img/wardrobes/wardrobe24.png" class="curtain-img"/>
+        <h3 class="curtain-title">Allan 1 Door Multi-Utility Wardrobe</h3>
+        <p class="curtain-brand">Neem</p>
+        <p class="curtain-price">₹ 16,550</p>
+        <s class="price">₹28,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(90)
+        <button class="order-now-btn">Buy Now</button>
+        
+    </div>
+    </div>
+    <br/><hr/>
+
+    
+    
+
+<script src="https://kit.fontawesome.com/90fb78d75b.js" crossorigin="anonymous"></script> 
+</body>
 </html>
