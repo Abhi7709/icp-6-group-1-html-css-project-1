@@ -1,5 +1,623 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofa's</title>
+    <style>
+        body{
+            background-color: #ffdab3;
+            padding: 0%;
+            margin: 0;
+        }
+
+        .offer-container{
+                height: 19px;
+                width: 100%;
+                background-color: black;
+                text-align: center;
+                font-size: 11px;
+                color: white;
+                margin-top: 0%;
+                padding-top: 5px;
+                position: relative;
+            }
+
+            .credit-card-img{
+                height: 14px;
+                width: 14px;
+                color: aliceblue;
+                position:absolute;
+                left: 625px;
+                top: 4px;
+            }
+
+            .option-bar{
+                width: 100%;
+                height: 46px;
+                background-color: #ffdf99;
+                position: relative;
+            }
+
+            .btn{
+                border-radius: 15px;
+                padding: 3px;
+                width: 130px; 
+                height: 30px;
+                margin: 8px;
+                background-color: #ffdf99;
+                border: #ffdf99;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;               
+                font-weight: bold;
+                font-size: 17px;
+                cursor: pointer;
+            }
+            .btn:hover{
+                background-color:#ffcf66;
+                color: white;
+                transition: 0.3s;}
+
+            .btn2{
+                border-radius: 15px;
+                padding: 3px;
+                width: 170px; 
+                height: 30px;
+                margin: 0px 8px;
+                background-color: #ffdf99;
+                border: #ffdf99;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;               
+                font-weight: bold;
+                font-size: 17px;
+                cursor: pointer;
+            }
+
+            .btn2:hover{
+                background-color:#ffcf66;
+                color: white;
+                transition: 0.3s;}
+
+            .signin-img{
+                height:30px;
+                width:30px;
+                position: relative;
+                top: 10px;
+                margin-left:820px; 
+                
+            }
+            .search{
+                padding-left: 20px;
+                padding-top: 3px;
+                border-radius: 20px;
+                height: 30px;
+                width: 450px;
+                position: absolute;
+                right: 550px;
+                top:8px;
+                background-color: #fff7e6;
+                font-size: 19px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                cursor: pointer;
+
+            }
+            .search:hover{
+                background-color:#ffcf66;
+                color: white;
+                transition: 0.3s;
+                box-shadow:#fff7e6;
+            }
+            .contact{
+                position: absolute;
+                margin-top: 12px;
+                padding: 2px;
+                right: 300px;
+                cursor: pointer;
+                border-radius: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+            .contact:hover{
+                background-color:#ffcf66;
+                color: white;
+                transition: 0.3s;
+                box-shadow:#fff7e6;
+            }
+
+    .sofa-card{
+        background-color: #fff;
+        width: 250px;
+        padding: 20px 30px;
+        margin: 5px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        box-shadow: 0  0 5px rgb(155, 137, 137);
+        height: 500px;
         
-    </head>
+}
+.sofa-card:hover{
+    background-color:white;
+    border-radius: 33px;
+    box-shadow:0  0 25px gray;
+    cursor: pointer;
+}
+    .sofa-img{
+        height: 300px;
+        width: 270px;
+        display: block;
+        margin-left: -10px;
+    }
+
+    .sofa-title{
+        text-align:center;
+         font-size:20px;
+         margin-top: 5px;
+         margin-bottom: 5px;
+            }
+            .sofa-price{
+                text-align:left;
+                font-weight: bold;
+                font-size: 22px;
+                margin:0%;
+                margin-bottom: 5px;
+            }
+            .price{
+                margin-top:30px;
+            }
+            .order-now-btn{
+                background-color:#cc6600;
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 5px 20px;
+                border: none;
+                border-radius: 30px;
+                margin-top: 10px;
+                cursor: pointer;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .sofa-container{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-evenly;
+                            margin-top: 30px;
+                           
+                        }
+                        .order-now-btn:hover{
+                            background-color:#ffcf66;
+                            box-shadow: 0 0 5px 2px #fff;
+                            padding: 7px 25px;
+                            transition: 0.5s;
+                              }
+                              .go-back{
+                                margin-left: 20px;
+                              }
+                              .star{
+                                color:#cc6600;
+                                text-align: center;
+                                margin-top: 10px;            
+                              }
+                              .name{
+                                font-size: 50px;
+                                text-align: left;
+                                color:#cc6600;
+                                margin-top: 50px;
+                                margin-left: 60px;
+                              }
+                    .sofa-review{
+                        color: #cc6600;
+                    }
+                    .sofa-brand{
+                        margin-bottom: 5px;
+                        margin-top:0%;
+                    }
+
+                    .livingroom{
+                        margin-left: 60px;
+                        text-align: left;
+                        font-size: 50px;
+                                color:#cc6600;
+                                margin-top: 50px;
+                    }
+
+                    .container2{
+                        margin-top: 30px;
+                    }
+
+                    .footer-heading{
+                        margin-left: 93px;
+                        margin-top: 40px;
+                    }
+
+                    .footer{
+                        color:darkslategray;
+                        margin-left: 100px;
+                        margin-right: 100px;
+                    }
+
+                    .card-top-margin{
+                        margin-top: -5px;
+                    }
+
+                   
+    @media only screen and (max-width:600px)and(max-width:800px){
+        .cake-card{
+        width: 200px;
+    }
+.cake-card-img{
+    height: 120px;
+}
+   }
+        </style>
+</head>
+<body>
+    <div class="offer-container">Get 10% instant  discount  on  cards  and  upi  payments
+        <img src="./img/homepage/credit-card.png" class="credit-card-img">
+    </div>
+    <div>
+
+    </div>
+    <div class="option-bar">
+        <p class="contact">📞 9966559955</p>
+        <button class="btn">Products</button>
+        <button class="btn">New at Decorify</button>
+        <button class="btn">Offers</button>
+        <img src="./img/homepage/password.png" class="signin-img">
+        <button class="btn2">Hey! Login or Signup</button>
+        <input type="text" placeholder="What are you looking for?" required class="search"/>
+    </div>
+
+    <h1 class="name"> Sofas</h1>
+    <div class="sofa-container">
+    <div class="sofa-card">
+        <img src="../img/Sofa's/1.png" class="sofa-img"/>
+        <h3 class="sofa-title">Henry Seater Sofa (Velvet, Chestnut Brown)</h3> 
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 39,898</p>
+        <s class="price">₹ 94,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(62)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="sofa-card">
+        <img src="../img/Sofa's/2.png" class="sofa-img"/>
+        <h3 class="sofa-title">Osbert 3 Seater Curved Sofa (Velvet, Graphite Grey) </h3>
+        <p class="sofa-brand">Honey Cream Stripe</p>
+        <p class="sofa-price">₹ 44,989</p>
+        <s class="price">₹ 44,989</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(53) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    
+    <div class="sofa-card">
+        <img src="../img/Sofa's/3.png" class="sofa-img"/>
+        <h3 class="sofa-title">Aspire 5 Seater Modern Curved Fabric Sofa (Cotton)</h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 85,989</p>
+        <s class="price">₹ 120,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (78)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    
+    <div class="sofa-card">
+        <img src="../img/Sofa's/4.png" class="sofa-img"/>
+        <h3 class="sofa-title">Quartz 2 Seater Printed Fabric Wooden Sofa </h3>
+        <p class="sofa-brand">Honey Cream Stripe</p>
+        <p class="sofa-price">₹ 29,898</p>
+        <s class="price">₹ 43,748</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(67)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+
+    <div class="sofa-card container2">
+        <img src="../img/Sofa's/5.png" class="sofa-img"/>
+        <h3 class="sofa-title">Henry Seater Sofa (Velvet, Chestnut Brown)</h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 39,898</p>
+        <s class="price">₹94,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(88)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    
+
+    <div class="sofa-card container2">
+        <img src="../img/Sofa's/6.png" class="sofa-img"/>
+        <h3 class="sofa-title">Henry L - Shape Right Aligned Corner Sofa (Velvet)</h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 68,989</p>
+        <s class="price">₹ 99,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    
+    <div class="sofa-card container2">
+        <img src="../img/Sofa's/7.png" class="sofa-img"/>
+        <h3 class="sofa-title">Berlin 3 Seater Sofa (Leatherette, Ginger Bread)</h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 47,989</p>
+        <s class="price">₹ 59,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (56)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="sofa-card container2">
+        <img src="../img/Sofa's/8.png" class="sofa-img"/>
+        <h3 class="sofa-title">Henry L - Shape Left Aligned Corne (Velvet)</h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 68,989</p>
+        <s class="price">₹ 99,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(89)
+        <button class="order-now-btn">Buy Now</button>
+    </div></div>
+    <hr/>
+
+    <div class="livingroom"> Modular Sofa's</div>
+    
+    <div class="sofa-container">
+    <div class="sofa-card">
+        <img src="../img/Sofa's/M1.png" class="sofa-img"/>
+        <h3 class="sofa-title">Nectar Sofa Cum Bed With Box Storage (Exotic)</h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 28,349</p>
+        <s class="price">₹ 49,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i> (75)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="sofa-card">
+        <img src="../img/Sofa's/M2.png" class="sofa-img"/>
+        <h3 class="sofa-title">Candice L-Shape Multifunctional Sofa (Exotic)</h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 30,499</p>
+        <s class="price">₹ 49,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(55)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="sofa-card">
+        <img src="../img/Sofa's/M3.png" class="sofa-img"/>
+        <h3 class="sofa-title">Nectar Sofa Cum Bed With Box Storage (Flowery)</h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 28,349</p>
+        <s class="price">₹49,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(84) 
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="sofa-card">
+        <img src="../img/Sofa's/M4.png" class="sofa-img"/>
+        <h3 class="sofa-title">Bartha 3 Seater Sofa Cum Bed Storage (Exotic) </h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 28,349</p>
+        <s class="price">₹ 51,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="sofa-card container2">
+        <img src="../img/Sofa's/M5.png" class="sofa-img"/>
+        <h3 class="sofa-title">DMendez Sofa Cum Bed With Box  (Exotic Teak) </h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹  34,649</p>
+        <s class="price">₹ 53,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="sofa-card container2">
+        <img src="../img/Sofa's/M6.png" class="sofa-img"/>
+        <h3 class="sofa-title">Mendez Sofa Cum Bed With Box Storage (Flowery) </h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹  34,649</p>
+        <s class="price">₹53,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="sofa-card container2">
+        <img src="../img/Sofa's/M7.png" class="sofa-img"/>
+        <h3 class="sofa-title">Candice L-Shape Corner Sofa (Flowery Wenge Finish) </h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 30,499</p>
+        <s class="price">₹ 28,349</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="sofa-card container2">
+        <img src="../img/Sofa's/M8.png" class="sofa-img"/>
+        <h3 class="sofa-title">Bartha 3 Seater Sofa Cum Bed Storage (Flowery) </h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 28,349</p>
+        <s class="price">₹ 51,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(76)
+        <button class="order-now-btn">Buy Now</button>
+    </div></div>
+    <hr/>
+
+    <div class="livingroom"> Popular Picks in Sofa Sets</div>
+
+    <div class="sofa-container card-top-margin">
+    <div class="sofa-card container2">
+        <img src="../img/Sofa's/P1.png" class="sofa-img"/>
+        <h3 class="sofa-title">Raiden Wooden Sofa Set with Zipper (Honey Finish)</h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 67,497</p>
+        <s class="price">₹ 152,499</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(95)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="sofa-card container2">
+        <img src="../img/Sofa's/P2.png" class="sofa-img"/>
+        <h3 class="sofa-title">Oxford 3 Seater Fabric Sofa (Cotton, Cream Forest)</h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 39,989</p>
+        <s class="price">₹ 64,199</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(90)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="sofa-card container2">
+        <img src="../img/Sofa's/P3.png" class="sofa-img"/>
+        <h3 class="sofa-title">Solace L-Shaped 4 Seater Sofa (Walnut Finish)</h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹  74,999</p>
+        <s class="price">₹ 128,599</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(75)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+
+    <div class="sofa-card container2">
+        <img src="../img/Sofa's/P4.png" class="sofa-img"/>
+        <h3 class="sofa-title">Henry L - Shape Right Aligned Sofa (Mulberry)</h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 68,989</p>
+        <s class="price">₹ 99,999</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(84)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+</div>
+
+<div class="livingroom">New Arrivals</div>
+
+<div class="sofa-container card-top-margin">
+    <div class="sofa-card container2">
+        <img src="../img/Sofa's/N1.png" class="sofa-img"/>
+        <h3 class="sofa-title">Vanisa 3 Seater Sofa with 2 Chairs and 6 Cushions </h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 87,989</p>
+        <s class="price">₹ 130,199</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(78)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="sofa-card container2">
+        <img src="../img/Sofa's/N2.png" class="sofa-img"/>
+        <h3 class="sofa-title">Apolo 3 Seater Sofa with 2 Chairs and 5 Cushions </h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 83,483</p>
+        <s class="price">₹ 130,199</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(80)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="sofa-card container2">
+        <img src="../img/Sofa's/N3.png" class="sofa-img"/>
+        <h3 class="sofa-title">Apolo 3 Seater Sofa with 2 Chairs and 4 Cushions</h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 77,963</p>
+        <s class="price">₹ 130,199</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(72)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    <div class="sofa-card container2">
+        <img src="../img/Sofa's/N4.png" class="sofa-img"/>
+        <h3 class="sofa-title">Alaska 3 Seater Living Room Sofa with 2 Lounge Chairs</h3>
+        <p class="sofa-brand">Wooden Street</p>
+        <p class="sofa-price">₹ 92,989</p>
+        <s class="price">₹ 130,000</s><br>
+        <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-solid fa-star star"></i>
+           <i class="fa-regular fa-star star"></i>(90)
+        <button class="order-now-btn">Buy Now</button>
+    </div>
+    </div>
+    <br/><hr/>
+
+    
+    
+
+<script src="https://kit.fontawesome.com/90fb78d75b.js" crossorigin="anonymous"></script> 
+</body>
 </html>
