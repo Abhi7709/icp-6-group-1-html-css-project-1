@@ -185,6 +185,16 @@ text-align:center;
                     flex-wrap: wrap;
                     justify-content: space-around;
                 }
+                .Lamp-container2{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                }
+                .Lamp-container3{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                }
                 .order-now-btn:hover{
                     background-color:#ffcf66;
                     box-shadow: 0 0 5px 2px #fff;
@@ -198,7 +208,9 @@ text-align:center;
                       }
                       .name{
                         font-size: 50px;
-                        text-align: center;
+                        font-weight: bold;
+                        margin-bottom: 15px;
+                        text-align:left;
                         color:#cc6600;
                       }
             .Lamp-review{
@@ -213,7 +225,7 @@ text-align:center;
 
             .footer-container{
             border-top: #8c8c8c 1px solid;
-            margin-top: 200px;
+            margin-top: 100px;
           height:520px;
           width:100%;
           background-color:  black;  

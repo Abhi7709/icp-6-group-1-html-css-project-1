@@ -30,7 +30,7 @@ body{
     .option-bar{
         width: 100%;
         height: 58px;
-        background-color: #ffdf99;
+        background-color:#ffdf99;
         position: relative;
         box-shadow: 0 0 10px #595959;
     }
@@ -285,12 +285,5 @@ text-align:center;
 }
         
 @media screen and (min-width: 600)and(max-width:800){
-.header-container{
-width:600px;
-    height:300px;
-    margin-top: 0%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
 
 }
