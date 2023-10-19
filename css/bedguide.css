@@ -1,0 +1,288 @@
+
+            body{
+                margin: 0px;
+                padding: 0%;
+            }
+            .offer-container{
+                height: 19px;
+                width: 100%;
+                background-color: black;
+                text-align: center;
+                font-size: 11px;
+                color: white;
+                margin-top: 0%;
+                padding-top: 5px;
+                position: relative;
+                
+            }
+
+            .credit-card-img{
+                height: 14px;
+                width: 14px;
+                color: aliceblue;
+                position:absolute;
+                left: 550px;
+                top: 4px;
+            }
+
+            .option-bar{
+                width: 100%;
+                height: 58px;
+                background-color: #ffdf99;
+                position: relative;
+                box-shadow: 0 0 10px #595959;
+            }
+
+            .btn{
+                border-radius: 10px;
+                padding: 3px;
+                width: 110px; 
+                height: 30px;
+                margin: 5px;
+                background-color: #ffdf99;
+                border: #ffdf99;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;               
+                font-weight: bold;
+                font-size: 17px;
+                cursor: pointer;
+            }
+            .btn:hover{
+                background-color:#ffcf66;
+                box-shadow: 0 0 10px #595959;
+                color: white;
+                transform: scale(1.1);
+                transition: 0.3s;}
+
+            .btn2{
+                border-radius: 10px;
+                padding: 3px;
+                width: 170px; 
+                height: 30px;
+                margin: 0px 10px;
+                background-color: #ffdf99;
+                border: #ffdf99;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;               
+                font-weight: bold;
+                font-size: 17px;
+                cursor: pointer;
+            }
+
+            .btn2:hover{
+                background-color:#ffcf66;
+                box-shadow: 0 0 10px #595959;
+                color: white;
+                transform: scale(1.05);
+                transition: 0.3s;}
+
+
+            .signin-img{
+                height:30px;
+                width:30px;
+                position: relative;
+                top: 10px;
+                margin-left:730px; 
+                
+            }
+            .search{
+                padding-left: 20px;
+                padding-top: 3px;
+                border-radius: 20px;
+                height: 35px;
+                width: 400px;
+                position: absolute;
+                right: 300px;
+                top:8px;
+                background-color: #fff7e6;
+                font-size: 19px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                cursor: pointer;
+
+            }
+            .search:hover{
+                background-color:#e6e6e6;
+                color: black;
+                transition: 0.3s;
+                box-shadow:0 0 10px #fff7e6;
+                transform: scale(1.05);
+            }
+            .contact{
+                position: absolute;
+                margin-top: 12px;
+                padding-left:4px ;
+                padding-right:4px ;
+                padding-top:2px ;
+                padding-bottom:2px ;
+                right: 100px;
+                cursor: pointer;
+                border-radius: 10px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+            .contact:hover{
+                background-color:#ffcf66;
+                box-shadow: 0 0 10px #595959;
+                color: white;
+                transform: scale(1.05);
+                transition: 0.3s;}
+
+                .sofaguide-img1{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 80px;
+                margin-bottom: 80px;
+                box-shadow: 0 0 20px #ffcf66;
+                }
+
+
+                .tips-heading{
+                    font-family: Copperplate Gothic Bold;
+                font-size: 30px;
+                font-weight: BOLD;
+                display: block;
+                text-align: center;
+                text-shadow:#ffcc00 0 0 2px;
+                margin-top: 100px;
+                }
+
+                .tips-heading2{
+                    text-align: center;
+                    font-size: 20px;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                    
+                }
+
+                .yt-video{
+                    margin-top: 100px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width:560;
+                    height:315;
+                }
+
+                .bedtype-container{
+                    background-color: #ffffff;
+                    margin-top: 70px;
+                    height: 440px;
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    background-color: #fff7e6;
+                    border-radius: 20px;
+                }
+
+                .bedtype-card{
+                    background-color: #f2f2f2;
+                    margin-top: px;
+                    height: 320px;
+                    width: 320px; 
+                    padding: 10px;
+                    border-radius: 15px;
+                    box-shadow: 0 0 10px #595959;
+                    margin-top: 43px;
+                }
+
+                .bedtype-img{
+                    height: 140px;
+                    width: 170px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-radius: 5px;
+                }
+
+                .bedtype-name{
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    padding-left: 7px;
+                    color: rgb(0, 0, 0);
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-top: 5px;
+                
+                }
+
+                .bedtype-description{
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+
+                .bedcare-container{
+                    background-color: #f2f2f2;
+                    margin-top: 70px;
+                    height: 550px;
+                    width: 100%;
+                }
+
+                .bedcare-heading{
+                    font-family: Copperplate Gothic Bold;
+                font-size: 30px;
+                font-weight: BOLD;
+                text-align: left;
+                margin-left: 100px;
+                padding-top: 50px;
+                
+                }
+
+                .bedcare-description{
+                    font-size: 19px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    margin:50px 100px;
+                }
+
+
+                
+
+                .footer-container{
+                    border-top: #8c8c8c 1px solid;
+                    margin-top: 200px;
+                  height:520px;
+                  width:100%;
+                  background-color:  black;  
+                  position: absolute;
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-around;
+                  position: absolute;
+                 }
+
+                 .footer-services-card{
+                    height: 240px;
+                    width: 150px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    margin-left: 50px;
+                    color: white;
+                 }
+                 
+
+                 .footer-services{
+                margin-top: 1px;
+                    color: white;
+                 }
+
+                 
+
+                 .footer-logo{
+                    margin-top: 70px;
+                    height:70px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                 }
+                    
+                 
+
+                 .copyright{
+                    position: relative;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 13px;
+                    text-align: center;
+                    color: white;
+                 }
+
+
+
+
+                
