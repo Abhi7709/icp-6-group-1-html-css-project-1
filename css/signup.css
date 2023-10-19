@@ -147,12 +147,44 @@ body{
 .input-box{
     outline: none;
     border: 1px solid black;
-font-size: 25px;
-margin: 20px;
-padding: 10px;
-display: block;
-width: 70%;
-}
+    font-size: 18px;
+    margin: 20px;
+    padding: 10px;
+    display: block;
+    width: 400px;
+    height:35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow:0 0 10px #595959;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+    
+    .input-box:hover{
+       transform: scale(1.05);
+       transition: 0.3s;
+    }
+
+    .box-heading{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 10px;
+     }
+     .create-account-text{
+        background-color: #ffdf99;
+        height: 30px;
+        width: 180px;
+        text-decoration: none;
+        padding: 3px;
+        border: solid black 2px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 19px;
+        border-radius: 10px;
+        font-weight: bold;
+        margin: 20px;
+     }
+
+     
 
 .footer-container{
             border-top: #8c8c8c 1px solid;

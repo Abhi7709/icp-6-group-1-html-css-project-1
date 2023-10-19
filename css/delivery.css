@@ -1,0 +1,95 @@
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    padding-bottom: 70 px;
+    height:100vh;
+    background:(#ffcf66);
+}
+.form{
+    padding:20px;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    padding-bottom: 70 px;
+    height:100vh;
+    background:(#ffcf66);
+}
+.form{
+    padding:20px;
+    width:700px;
+    background: white;
+    box-shadow:0 5px 10 px;
+}
+.container form {
+    padding: 20px;
+    width: 700px;
+    background: #ffffff;
+    box-shadow: 0 5px 10px;
+}
+.img{
+    height:100px;
+}
+.inputBox{
+    height: 20px;
+    margin-top: 5px;
+    font-size:20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15 px;
+}
+.col{
+    flex: 1 1 250px;   
+}
+.container form .row{
+    display:flex;
+    flex-wrap: wrap;
+        gap:15px;
+}
+.container form .row .col{
+    flex:1 1 250px;
+}
+.title{
+    font-size: 20px;
+    color:#000000;
+    padding-bottom: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.inputBox{
+    margin-bottom: 10px;
+    display:block;
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+}
+.cod{
+font-size: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: bold;
+}
+.submit-btn{
+    justify-content: center;
+    align-items: center;
+    display:block;
+    width:700px;
+    padding:12px;
+  
+    background:   #ffcf66;
+    color:black;
+    margin:auto;
+    cursor: pointer;
+
+}
+.submit-btn:hover{
+    background-color:  #fff7e6;
+    cursor: pointer;
+}

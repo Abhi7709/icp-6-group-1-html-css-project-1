@@ -142,12 +142,62 @@ margin-bottom: 10px;
 .input-box{
 outline: none;
 border: 1px solid black;
-font-size: 25px;
+font-size: 18px;
 margin: 20px;
 padding: 10px;
 display: block;
-width: 70%;
+width: 400px;
+height:35px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+box-shadow:0 0 10px #595959;
+border-radius: 10px;
+cursor: pointer;
 }
+
+.input-box:hover{
+   transform: scale(1.05);
+   transition: 0.3s;
+}
+
+.create-account-text{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.box-heading{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 21px;
+   font-weight: bold;
+   margin-left: 10px;
+}
+
+.login-btn{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   width: 200px;
+   height: 35px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 18px;
+   border-radius: 10px;
+   background-color: #ffdf99;
+   cursor: pointer;
+}
+
+.login-btn:hover{
+   background-color: #ffcf66;
+   transform: scale(1.05);
+   transition: 0.3s;
+   box-shadow: 0 0 10px #595959;
+   font-size: 20px;
+}
+
+.create-account-text{
+   text-align: center;
+}
+
 
 .footer-container{
     border-top: #8c8c8c 1px solid;
@@ -194,4 +244,9 @@ margin-top: 1px;
     font-size: 13px;
     text-align: center;
     color: white;
+ }
+
+ .email-box{
+   height: 20px;
+   width: 100px;
  }
